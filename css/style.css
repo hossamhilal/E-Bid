@@ -1,0 +1,1117 @@
+/*=================================================================================*/
+/*=================================================================================*/
+/*=================================================================================*/
+/*==========================||---------------------------||========================*/
+/*==========================|| Developed By Hossam Hilal ||========================*/
+/*==========================||---------------------------||========================*/
+/*====================================||------||===================================*/
+/*====================================|| 2020 ||===================================*/
+/*====================================||------||===================================*/
+/*=================================================================================*/
+/*=================================================================================*/
+
+@font-face {
+    font-family: 'Cocon';
+    src: url('../fonts/Cocon-Regular.eot');
+    src: url('../fonts/Cocon-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Cocon-Regular.woff2') format('woff2'),
+        url('../fonts/Cocon-Regular.woff') format('woff'),
+        url('../fonts/Cocon-Regular.ttf') format('truetype'),
+        url('../fonts/Cocon-Regular.svg#Cocon-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '29LT Bukra';
+    src: url('../fonts/29LTBukra-Bold.eot');
+    src: url('../fonts/29LTBukra-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/29LTBukra-Bold.woff2') format('woff2'),
+        url('../fonts/29LTBukra-Bold.woff') format('woff'),
+        url('../fonts/29LTBukra-Bold.ttf') format('truetype'),
+        url('../fonts/29LTBukra-Bold.svg#29LTBukra-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JF Flat';
+    src: url('../fonts/JFFlat-Regular.eot');
+    src: url('../fonts/JFFlat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/JFFlat-Regular.woff2') format('woff2'),
+        url('../fonts/JFFlat-Regular.woff') format('woff'),
+        url('../fonts/JFFlat-Regular.ttf') format('truetype'),
+        url('../fonts/JFFlat-Regular.svg#JFFlat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Basic         ||========================*/
+/*==========================||---------------------------||========================*/
+
+body {
+    font-family: 'JF Flat', sans-serif;
+    overflow-x: hidden;
+    direction: rtl;
+    background: #FCFCFC;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: var(#968AB2);
+    z-index: -1;
+    position: relative;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(#968AB2);
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: var(--darkBlue);
+    max-height: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||            Buttons        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.redBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ED1B24;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.redBtn:hover {
+    background: #de030c;
+}
+
+.whiteBtn {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ED1B24;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ED1B24;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.whiteBtn:hover {
+    color: #FFFFFF;
+    background: #ED1B24;
+}
+
+.gradientBtn {
+    background: transparent linear-gradient(107deg, #ED1B24 0%, #002A64 100%) 0% 0% no-repeat padding-box;
+    border-radius: 18px;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.gradientBtn:hover {
+    background: #ED1B24;
+    color: #fff;
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.headerTop {
+    background: #002A64 0% 0% no-repeat padding-box;
+}
+
+.headerTopWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerTopUser a {
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.headerTopUser img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.headerTopUser a:hover {
+    background: #ED1B24;
+}
+
+.dropBox {
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 10px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+}
+
+.dropBox span {
+    padding: 0 10px;
+}
+
+.dropBox select {
+    appearance: inherit;
+    width: 40px;
+    background: transparent;
+    color: inherit;
+    border: 0;
+    padding: 0 5px;
+}
+
+.dropBox::after {
+    content: '';
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.dropBox select:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.dropBox select option {
+    color: #000;
+    text-align: center;
+}
+
+.headerMiddleBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.headerFilter {
+    display: flex;
+    border: 1px solid #E9E9E9;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 48px;
+}
+
+.headerFilterCats {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.headerFilterCats::before {
+    content: '';
+    background: #E9E9E9;
+    width: 1px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: -7px;
+}
+
+.headerFilterCats .filterToggle {
+    width: 20px;
+    height: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 15px;
+}
+
+.headerFilterCats .filterToggle span {
+    width: 100%;
+    height: 2px;
+    background: #002A64;
+    display: block;
+}
+
+.headerFilterCats:hover .filterToggle span {
+    background: #ED1B24;
+}
+
+.headerFilterCats select {
+    padding: 0 50px 0 0;
+    color: #3A3A3A;
+    font-size: 12px;
+    border: 0;
+    z-index: 1;
+    background: transparent;
+    cursor: pointer;
+}
+
+.headerFilterCats select:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.headerFilterCats:hover option:selected {
+    color: #ED1B24;
+}
+
+.headerFilter input {
+    margin: 0 15px;
+    height: 45px;
+    font-size: 13px;
+    min-width: 260px;
+    border: 0;
+}
+
+.headerFilter input::placeholder {
+    color: #E9E9E9;
+}
+
+.headerFilter input:focus,
+.headerFilter input:active {
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+}
+
+.headerFilter .redBtn {
+    border: 0;
+    width: 75px;
+    height: 48px;
+}
+
+.headerCart {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #3A3A3A;
+    cursor: pointer;
+}
+
+.headerCartIcon {
+    width: 48px;
+    height: 48px;
+    background: #ED1B24 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerCart label {
+    margin: 0 15px;
+}
+
+.headerCart:hover {
+    color: #ED1B24;
+}
+
+.headerNav {
+    background: #002A64 0% 0% no-repeat padding-box;
+}
+
+.headerNav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerNav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 50px;
+    margin-left: 20px;
+    padding: 0 15px;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.headerNav a:hover {
+    background: #ED1B24;
+}
+
+.headerNav .active a {
+    background: #ED1B24;
+    border-radius: 25px;
+}
+
+.headerSlider {
+    position: relative;
+}
+
+.owlHeader .item {
+    height: 475px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owlHeaderData {
+    max-width: 350px;
+    text-align: center;
+}
+
+.owlHeaderData h1 {
+    font-size: 40px;
+    line-height: 60px;
+    color: #ED1B24;
+}
+
+.owlHeaderData .whiteBtn {
+    margin: 60px auto 0;
+    height: 65px;
+    width: 300px;
+    font-size: 25px;
+}
+
+.owlHeader .owl-nav>div {
+    width: 56px;
+    height: 56px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #A1A1A1;
+    border-radius: 28px;
+    color: #A1A1A1;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 28px);
+}
+
+.owlHeader .owl-nav>div:hover {
+    color: #ED1B24;
+    border-color: #ED1B24;
+}
+
+.owlHeader .owl-nav .owl-prev {
+    right: 6%;
+}
+
+.owlHeader .owl-nav .owl-next {
+    left: 6%;
+}
+
+.sliderProgress {
+    width: 0;
+    max-width: 100%;
+    height: 4px;
+    background: #ED1B24;
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Share         ||========================*/
+/*==========================||---------------------------||========================*/
+
+.share {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.share a {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px;
+    transition: all .3s ease-in-out;
+}
+
+.share a span {
+    font-size: 13px;
+    display: none;
+    text-transform: capitalize;
+}
+
+.share .facebook {
+    background: #3B5998;
+}
+
+.share .youtube {
+    background: #DC4E41;
+}
+
+.share .twitter {
+    background: #55ACEE;
+}
+
+.share .whatsapp {
+    background: #2AD53B;
+}
+
+.share .email {
+    background: #220081;
+}
+
+.share a:hover {
+    width: 82px;
+}
+
+.share a:hover i {
+    display: none;
+}
+
+.share a:hover span {
+    display: block;
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Cats          ||========================*/
+/*==========================||---------------------------||========================*/
+
+.secPadding {
+    padding: 40px 0;
+}
+
+.secHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E9E9E9;
+    padding: 0 0 10px 0;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.secHeaderCenter {
+    justify-content: center;
+}
+
+.secHeader h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ED1B24;
+    position: relative;
+}
+
+.secHeader h2::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #ED1B24;
+    position: absolute;
+    bottom: -11px;
+    right: 0;
+}
+
+.secHeader a {
+    color: #3A3A3A;
+    position: relative;
+}
+
+.secHeader a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #3A3A3A;
+    position: absolute;
+    bottom: -11px;
+    right: 0;
+}
+
+.secHeader a:hover {
+    color: #ED1B24;
+}
+
+.secHeader a:hover::after {
+    background: #ED1B24;
+}
+
+.cats .item {
+    padding: 1px;
+}
+
+.cat {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.cat:hover {
+    border-top-color: #ED1B24;
+    border-right-color: #ED1B24;
+    border-bottom-color: #ED1B24;
+    border-left-color: #ED1B24;
+    transition: border-top-color 0.4s linear, border-right-color 0.4s linear 0.10s, border-bottom-color 0.4s linear 0.20s, border-left-color 0.4s linear 0.30s;
+}
+
+.cat img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.cat h3 {
+    color: #444444;
+    font-size: 20px;
+}
+
+.cat:hover h3 {
+    color: #ED1B24;
+}
+
+.owlNav .owl-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 0 0;
+}
+
+.owlNav .owl-nav>div {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #E9E9E9;
+    color: #E9E9E9;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.owlNav .owl-nav>div:hover {
+    color: #ED1B24;
+    border-color: #ED1B24;
+    background: #fff;
+}
+
+@media (min-width:1350px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||       Home Auctions       ||========================*/
+/*==========================||---------------------------||========================*/
+
+.homeAuction {
+    padding: 0 10px;
+    text-align: center;
+    height: 300px;
+}
+
+.homeAuctionImage {
+    width: 100%;
+    height: 189px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+.homeAuction:hover .homeAuctionImage {
+    height: 210px;
+}
+
+.homeAuctionImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.homeAuctionHover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+
+.homeAuction .gradientBtn {
+    width: 113px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+}
+
+.homeAuction:hover .gradientBtn {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.homeAuction .timer {
+    font-size: 12px;
+}
+
+.homeAuction .timer span {
+    padding: 0 3px;
+}
+
+.homeAuctionHover .timer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(45px);
+    transition: all .3s ease-in-out;
+}
+
+.homeAuction:hover .homeAuctionHover .timer {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.homeAuction h3 {
+    color: #3A3A3A;
+    font-size: 15px;
+}
+
+.homeAuction h4 {
+    color: #002A64;
+    font-size: 12px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.homeAuction>.timer {
+    color: #ED1B24;
+}
+
+.homeAuction:hover>.timer {
+    display: none;
+}
+
+.pageBanner img {
+    width: 100%;
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||         Best Offers       ||========================*/
+/*==========================||---------------------------||========================*/
+
+.bestOffer {
+    text-align: center;
+    height: 275px;
+}
+
+.bestOfferImage {
+    height: 190px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E9E9E9;
+    border-radius: 5px;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.owlBest .bestOfferImage img {
+    width: auto;
+}
+
+.bestOffer:hover .bestOfferImage {
+    height: 210px;
+}
+
+.bestOfferHover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+.bestOfferActions {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    transition: all .3s ease-in-out;
+    background: transparent linear-gradient(107deg, #ED1B24 0%, #002A64 100%) 0% 0% no-repeat padding-box;
+}
+
+.bestOffer:hover .bestOfferActions {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.bestOfferActions>* {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.bestOfferActions>*:hover {
+    transform: translateY(-3px);
+}
+
+.bestOfferHover .stars {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0 15px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(45px);
+    transition: all .3s ease-in-out;
+}
+
+.bestOffer:hover .bestOfferHover .stars {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.stars {
+    font-size: 9px;
+    color: #D1D1D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars i {
+    margin: 3px;
+}
+
+.stars .orange {
+    color: #FFCC00;
+}
+
+.bestOffer:hover>.stars {
+    display: none;
+}
+
+.bestOffer h3 {
+    color: #3A3A3A;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bestOffer p {
+    font-size: 12px;
+    color: #3A3A3A;
+    margin-bottom: 5px;
+}
+
+.bestOffer .oldPrice {
+    color: #C6C6C6;
+    margin: 05px;
+    text-decoration: line-through;
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||            Banners        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.banners .row {
+    margin: 0 -5px;
+}
+
+.banners .col-12 {
+    padding: 0 8px;
+}
+
+.bannerImage:first-of-type {
+    margin-bottom: 16px;
+}
+
+.bannerImage img {
+    width: 100%;
+}
+
+.bannerImage {
+    border: 1px solid #D1D1D1;
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||          Hot Links        ||========================*/
+/*==========================||---------------------------||========================*/
+
+.hotLinks .row {
+    margin: 0 -5px;
+}
+
+.hotLinks .col-6 {
+    padding: 0 5px;
+}
+
+.hotLink {
+    text-align: center;
+    position: relative;
+}
+
+.hotLink::before {
+    content: url(../images/polygon.png);
+    z-index: -1;
+    position: absolute;
+    top: -10px;
+    left: 7px;
+}
+
+.hotLinkBox {
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    -webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    clip-path: polygon(50% 0, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
+    background: #fff;
+    height: 154px;
+    width: 133px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    margin: auto;
+    box-shadow: -15px 15px 30px #0000000D;
+    position: relative;
+    z-index: 1;
+}
+
+.hotLinkIcon {
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hotLink h2 {
+    color: #002A64;
+    font-size: 19px;
+    line-height: 30px;
+    margin: 5px 0 0;
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||             Header        ||========================*/
+/*==========================||---------------------------||========================*/
