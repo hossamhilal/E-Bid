@@ -2,16 +2,18 @@
 $(document).ready(function ($) {
     'use strict';
  
-    // // Open navbarSide when button is clicked
-    // $('.navBtn').on('click', function () {
-    //     $('.headerNav').toggleClass('show');
-    //     $('body').toggleClass('no-scroll');
-    // });
+    // Open navbarSide when button is clicked
+    $('.navBtn').on('click', function () {
+        $('.headerNav').addClass('show');
+        $('.headerOverlay').addClass('show');
+        $('body').toggleClass('stopScroll');
+    });
 
-    // $('.closeMenu').on('click', function () {
-    //     $('.headerNav').removeClass('show');     
-    //     $('body').removeClass('no-scroll');
-    // });
+    $('.headerOverlay').on('click', function () {
+        $(this).removeClass('show'); 
+        $('.headerNav').removeClass('show');     
+        $('body').removeClass('stopScroll');
+    });
 
     // Header Owl
     $('.owlHeader').owlCarousel({
@@ -110,6 +112,31 @@ $(document).ready(function ($) {
         autoplay: true,
         loop: true,
         nav: true,
+        dots:false,
+        navText: ["<i class='icofont-simple-right'></i>", "<i class='icofont-simple-left'></i>"],
+        autoplaySpeed : 2000,
+        autoplayTimeout : 2000,
+        smartSpeed: 2000 ,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+
+    // Sponsors Owl
+    $('.owlSponsors').owlCarousel({
+        rtl: true,
+        margin: 20,
+        autoplay: true,
+        loop: true,
+        nav: false,
         dots:false,
         navText: ["<i class='icofont-simple-right'></i>", "<i class='icofont-simple-left'></i>"],
         autoplaySpeed : 2000,
