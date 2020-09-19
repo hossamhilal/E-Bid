@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="plugins/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/jqueryUi/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/xIcon.png" type="image/x-icon" />
+    <title> E-Bid </title>
+</head>
+
+<body>
+
+    <!-- MAIN HEADER -->
+    <header>
+        <div class="headerTop">
+            <div class="container">
+                <div class="headerTopWrapper">
+                    <div class="headerTopUser">
+                        <a href="login.html"> <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> </a>
+                        <a href="store-signUp.html"> <img src="images/icon-store.png" alt="icon"> <span> تسجيل كتاجر </span> </a>
+                        <a href="favourite.html"> <img src="images/icon-fav.png" alt="icon"> <span> المنتجات المفضلة <span> (0) </span></span> </a>
+                    </div>
+                    <div class="headerTopMenus">
+                        <div class="dropBox">
+                            <img src="images/icon-global.png" alt="icon">
+                            <span> اللغة : </span>
+                            <select>
+                                <option value="0"> عربي </option>
+                                <option value="1"> En </option>
+                            </select>
+                        </div>
+                        <div class="dropBox">
+                            <img src="images/icon-coin.png" alt="icon">
+                            <span>  : العملة</span>
+                            <select>
+                                <option value="0"> Le </option>
+                                <option value="1"> Sar </option>
+                                <option value="2"> Ep </option>
+                                <option value="3"> USD</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headerMiddle">
+            <div class="container">
+                <div class="headerMiddleBox">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="english" class="img-fluid" width="100%">
+                        </a>
+                    </div>
+                    <form class="headerFilter">
+                        <div class="headerFilterCats">
+                            <div class="filterToggle"> <span></span> <span></span> <span></span> </div>
+                            <select>
+                                <option value="0" selected> كل الاقسام </option>
+                                <option value="1"> الكترونيات </option>
+                                <option value="2"> سيارات </option>
+                                <option value="3"> قطع غيار </option>
+                                <option value="4"> ملابس </option>
+                                <option value="5"> الأطفال والواليد </option>
+                                <option value="6"> الاكسسورات </option>
+                            </select>
+                        </div>
+                        <input type="text" placeholder="اكتب بحثك هنا">
+                        <button class="redBtn"> <i class="icofont-search-1"></i> </button>
+                    </form>
+                    <div class="userIcons">
+                        <div class="headerNotifications"> <i class="far fa-bell"></i> </div>
+                        <div class="headerCart">
+                            <div class="headerCartIcon"> <img src="images/icon-basket.png" alt="icon"></div>
+                            <label> عربة التسوق  </label>
+                            <span> (0) </span>
+                        </div>
+                    </div>  
+                    <div class="navBtn"> <span></span><span></span><span></span></div>
+                    <div class="headerOverlay"></div>
+                </div>
+            </div>
+        </div>
+              
+        <div class="headerNav">
+            <div class="container">
+                <ul>
+                    <li> <a href="index.html"> الرئيسية </a> </li>
+                    <li class="active"> <a href="elect.html"> الالكترونيات </a> </li>
+                    <li> <a href="cars.html"> سيارات  </a> </li>
+                    <li> <a href="#"> قطع غيار </a> </li>
+                    <li> <a href="#"> ملابس </a> </li>
+                    <li> <a href="#"> عروض شهرية </a> </li>
+                    <li> <a href="auctions.html"> مزادات </a> </li>
+                </ul>     
+            </div>
+        </div>
+    </header>
+
+    <!-- SHARE  -->
+    <div class="share">
+        <a href="#" class="facebook"> <i class="icofont-facebook"></i> <span> facebook </span></a>
+        <a href="#" class="youtube"> <i class="icofont-youtube"></i> <span> youtube </span></a>
+        <a href="#" class="twitter"> <i class="icofont-twitter"></i> <span> twitter </span></a>
+        <a href="#" class="whatsapp"> <i class="icofont-whatsapp"></i> <span> whatsapp </span></a>
+        <a href="#" class="email"> <i class="icofont-email"></i> <span> email </span></a>
+    </div>
+
+    <!-- Page Info  -->
+    <div class="pageInfo">
+        <div class="container">
+            <h1> إليكترونيات </h1>
+            <div class="bradCrumbBox"> 
+                <i class="fas fa-home"></i>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
+                    <li class="breadcrumb-item active" aria-current="page"> إليكترونيات </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- cat Page  -->
+    <div class="catPage secPadding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="sideFilter">
+                        <form class="sideSearch">
+                           <input type="text" class="form-control"> 
+                           <button type="submit"> <i class="icofont-search-1"></i> </button>
+                        </form>
+                        <h2> صنف حسب </h2>
+                        <div class="filterCollapse">
+                            <div class="filterCollapseHead"> <label>  حسب القسم </label> <span class="toggleCollapse"> <i class="icofont-minus"></i> </span> </div>
+                            <div class="filterCollapseBody">
+                                <div class="checkbox"> 
+                                    <input type="checkBox">
+                                    <label> لابات </label>
+                                </div>
+                                <div class="checkbox"> 
+                                    <input type="checkBox">
+                                    <label> موبايلات </label>
+                                </div>
+                                <div class="checkbox"> 
+                                    <input type="checkBox">
+                                    <label> شاشات </label>
+                                </div>
+                                <div class="checkbox"> 
+                                    <input type="checkBox">
+                                    <label> اكسسوارات </label>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="filterCollapse">
+                            <div class="filterCollapseHead"> <label> حسب الماركة </label> <span class="toggleCollapse"> <i class="icofont-minus"></i> </span></div>
+                            <div class="filterCollapseBody">
+                                <div class="checkbox"> 
+                                    <input type="checkBox">
+                                    <label> توشيبا </label>
+                                </div>
+                                <div class="checkbox"> 
+                                    <input type="checkBox">
+                                    <label> اتش بى </label>
+                                </div>
+                                <div class="checkbox"> 
+                                    <input type="checkBox">
+                                    <label> ديل </label>
+                                </div>
+                                <div class="checkbox"> 
+                                    <input type="checkBox">
+                                    <label> ابل </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterCollapse">
+                            <div class="filterCollapseHead"> <label> تصنيف حسب اللون </label> <span class="toggleCollapse"> <i class="icofont-minus"></i> </span></div>
+                            <div class="filterCollapseBody">
+                                <div class="colorsRadios">
+                                    <div class="colorRadio"> 
+                                        <input type="radio" name="color">
+                                        <label style="--color: #B87145;"></label>
+                                    </div>
+                                    <div class="colorRadio"> 
+                                        <input type="radio" name="color">
+                                        <label style="--color: #F0C04A;"></label>
+                                    </div>
+                                    <div class="colorRadio"> 
+                                        <input type="radio" name="color">
+                                        <label style="--color: #333333;"></label>
+                                    </div>
+                                    <div class="colorRadio"> 
+                                        <input type="radio" name="color">
+                                        <label style="--color: #CC3333;"></label>
+                                    </div>
+                                    <div class="colorRadio"> 
+                                        <input type="radio" name="color">
+                                        <label style="--color: #3399CC;"></label>
+                                    </div>
+                                    <div class="colorRadio"> 
+                                        <input type="radio" name="color">
+                                        <label style="--color: #669933;"></label>
+                                    </div>
+                                    <div class="colorRadio"> 
+                                        <input type="radio" name="color">
+                                        <label style="--color: #F2719C;"></label>
+                                    </div>
+                                    <div class="colorRadio"> 
+                                        <input type="radio" name="color">
+                                        <label style="--color: #ADB845;"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterCollapse">
+                            <div class="filterCollapseHead"> <label> حسب السعر  </label> <span class="toggleCollapse"> <i class="icofont-minus"></i> </span></div>
+                            <div class="filterCollapseBody">
+                                <div class="range">
+                                    <label> يتراوح مابين </label> <span class="minRange"></span> <i class="icofont-minus"></i> <span class="maxRange"></span>
+                                </div>
+                                <div id="rangeSlider"></div>
+                                <div class="rangeValues">
+                                    <span class="max"></span>
+                                    <span class="min"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-9">
+                    <div class="catProducts">
+                        <div class="row">
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/phone-1.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/headPhone-1.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/phone-2.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/phone-3.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/headPhone-2.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/phone-4.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/headPhone-3.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/phone-5.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/phone-6.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>           
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/headPhone-4.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/headPhone-5.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/headPhone-6.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/headPhone-1.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/phone-2.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/phone-3.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-lg-3">
+                                <div class="bestOffer">
+                                    <div class="bestOfferImage">
+                                        <img src="images/headPhone-2.png" alt="cat" class="img-fluid">
+                                        <div class="bestOfferHover">
+                                            <div class="bestOfferActions">
+                                                <div class="addToCart"> <i class="fas fa-shopping-basket"></i> </div>
+                                                <a class="see" href="product.html"> <i class="fas fa-eye"></i> </a>
+                                                <div class="addToFav"> <i class="far fa-heart"></i> </div>
+                                            </div>
+                                            <div class="stars"> 
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt orange"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3> خلافاَ للإعتقاد السائد </h3>
+                                    <p> <span class="newPrice"> 299 ريال </span> <span class="oldPrice"> 399 ريال </span></p>
+                                    <div class="stars"> 
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt orange"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pagination  -->
+                            <div class="col-12">
+                                <div class="pagination">
+                                    <a href="#"> <i class="icofont-simple-right"></i> </a>
+                                    <a href="#"> 01 </a>
+                                    <a href="#"> 02 </a>
+                                    <a href="#"> 03 </a>
+                                    <a href="#"> 04 </a>
+                                    <a href="#"> 05 </a>
+                                    <a href="#"> <i class="icofont-simple-left"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <section class="footer secPadding">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/footerLogo.png" alt="english" class="img-fluid" width="100%">
+                </a>
+            </div>
+
+            <!-- Footer Nav  -->
+            <div class="footerNav">
+                <ul>
+                    <li class="active"> <a href="index.html"> الرئيسية </a> </li>
+                    <li> <a href="elect.html"> الالكترونيات </a> </li>
+                    <li> <a href="cars.html"> سيارات  </a> </li>
+                    <li> <a href="#"> قطع غيار </a> </li>
+                    <li> <a href="#"> ملابس </a> </li>
+                    <li> <a href="#"> عروض شهرية </a> </li>
+                    <li> <a href="auctions.html"> مزادات </a> </li>
+                </ul> 
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footerInfo">
+                        <h3> حسابى </h3>
+                        <ul>
+                            <li> <a href="profile.html"> حسابى </a> </li>
+                            <li> <a href="favourite.html"> قائمة رغباتى  </a> </li>
+                            <li> <a href="cart.html"> سلة المشتريات   </a> </li>
+                            <li> <a href="pay.html"> دفع </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footerInfo">
+                        <h3> خدمة العملاء </h3>
+                        <ul>
+                            <li> <a href="auctions.html"> المزادات </a> </li>
+                            <li> <a href="policy.html">  الشروط والاحكام   </a> </li>
+                            <li> <a href="contact.html"> اتصل بنا  </a> </li>
+                            <li> <a href="about.html"> من نحن </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footerInfo">
+                        <h3> معلومات </h3>
+                        <ul>
+                            <li> <a href="store-signUp.html"> كيف اسجل كتاجر  </a> </li>
+                            <li> <a href="policy.html"> اتفاقية الاستخدام  </a> </li>
+                            <li> <a href="faq.html">  الاسئلة المتكرره </a> </li>
+                            <li> <a href="map.html"> خريطة الموقع </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footerInfo">
+                        <h3> معلومات التواصل </h3>
+                        <ul>
+                            <li> <p> الرياض .المملكه العربية السعودية  </p> </li>
+                            <li> <a href="tel:+966549782553"> +966549782553  </a> </li>
+                            <li> <a href="mailto:mail@company.com"> mail@company.com </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Policy  -->
+                <div class="col-12">               
+                    <div class="privacy">
+                        <div class="row">
+                            <div class="col-12 col-sm-4">
+                                <p> جميع الحقوق محفوظة لموقع اى-بيد </p>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <img src="images/payIcons.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <img src="images/kian.png" alt="logo" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="plugins/jqueryUi/jquery-ui.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
