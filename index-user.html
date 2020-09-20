@@ -26,7 +26,17 @@
             <div class="container">
                 <div class="headerTopWrapper">
                     <div class="headerTopUser">
-                        <a href="login.html"> <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> </a>
+                        <div class="userDrop"> 
+                            <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> 
+                            <ul class="userDropDown">
+                                <a href="store.html"> <img src="images/user-icon-1.png" alt="icon"> <span> متجرى </span> </a>
+                                <a href="profile-orders.html"> <img src="images/user-icon-2.png" alt="icon"> <span> طلباتى </span> </a>
+                                <a href="profile-auctions.html"> <img src="images/user-icon-3.png" alt="icon"> <span> مزايداتى </span> </a>
+                                <a href="profile-address.html"> <img src="images/user-icon-4.png" alt="icon"> <span> عناوينى </span> </a>
+                                <a href="profile.html"> <img src="images/user-icon-5.png" alt="icon"> <span> الملف الشخصى</span> </a>
+                                <a href="index.html"> <img src="images/user-icon-6.png" alt="icon"> <span>  تسجيل الخروج</span> </a>
+                            </ul>
+                        </div>
                         <a href="store-signUp.html"> <img src="images/icon-store.png" alt="icon"> <span> تسجيل كتاجر </span> </a>
                         <a href="favourite.html"> <img src="images/icon-fav.png" alt="icon"> <span> المنتجات المفضلة <span> (0) </span></span> </a>
                     </div>
@@ -79,12 +89,12 @@
                         <button class="redBtn"> <i class="icofont-search-1"></i> </button>
                     </form>
                     <div class="userIcons">
-                        <div class="headerNotifications"> <i class="far fa-bell"></i> </div>
-                        <div class="headerCart">
+                        <a class="headerNotifications" href="favourite.html"> <i class="far fa-bell"></i> </a>
+                        <a class="headerCart" href="cart.html">
                             <div class="headerCartIcon"> <img src="images/icon-basket.png" alt="icon"></div>
                             <label> عربة التسوق  </label>
                             <span> (0) </span>
-                        </div>
+                        </a>
                     </div>                
                     <div class="navBtn"> <span></span><span></span><span></span></div>
                     <div class="headerOverlay"></div>

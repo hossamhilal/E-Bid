@@ -1,5 +1,5 @@
 /*global $ */
-$(document).ready(function ($) {
+(function($) {
     'use strict';
  
     // Open navbarSide when button is clicked
@@ -13,6 +13,17 @@ $(document).ready(function ($) {
         $(this).removeClass('show'); 
         $('.headerNav').removeClass('show');     
         $('body').removeClass('stopScroll');
+    });
+
+    // Hide User Dropdown
+    $(Document).on('click', function () {
+        $('.userDropDown').hide();     
+    });
+
+    // User Dropdown
+    $('.userDrop').on('click', function (e) {
+        $('.userDropDown').toggle();    
+        e.stopPropagation();
     });
 
     // Header Owl
@@ -41,7 +52,6 @@ $(document).ready(function ($) {
     });
 
     function startProgressBar() {
-        // apply keyframe animation
         $('.sliderProgress').css({
           width: "100%",
           transition: "width 5000ms"
@@ -170,6 +180,18 @@ $(document).ready(function ($) {
         }
     });
 
+    // Edit Filed
+    $(document).on('click', '.editField' , function(){
+        let filedInput = $(this).prev('input');
+        if (filedInput.attr('disabled')) {
+            filedInput.removeAttr('disabled'); 
+            filedInput.focus(); 
+        }
+        else {
+            filedInput.attr('disabled', 'disabled'); 
+        }
+    });
+
     // Filter Collapse
     $('.toggleCollapse').on('click', function () {
         $(this).parent().next('.filterCollapseBody').slideToggle(); 
@@ -244,6 +266,42 @@ $(document).ready(function ($) {
         $(itemId).addClass('show');
     });
 
+    // Order Steps 
+    $(window).on('load', function(){
+        if ($('.statusStep:nth-child(4)').hasClass('finished')) {
+            $('.status').addClass('allSteps');
+            console.log('allSteps')
+        }
+        else if ($('.statusStep:nth-child(3)').hasClass('finished')) {
+            $('.status').addClass('twoSteps'); 
+            console.log('threeSteps')
+        }
+        else if ($('.statusStep:nth-child(2)').hasClass('finished')) {
+            $('.status').addClass('twoSteps'); 
+            console.log('twoSteps')
+        }
+        else if ($('.statusStep:nth-child(1)').hasClass('finished')) { 
+            $('.status').addClass('oneSteps'); 
+            console.log('oneSteps')
+        }
+    });
+
+    // Delete Address 
+    $('.deleteAddress').on('click' , function(e){
+        e.preventDefault();
+        $(this).parents('.address').remove();
+    });
+
+    // Delete Table Item 
+    $('.deletecartItem').on('click' , function(e){
+        e.preventDefault();
+        $(this).parents('.mobileItem').remove();
+        $(this).parents('tr').remove();
+    });
+
+    
+
+
 
     // Range Slider 
     $('#rangeSlider').slider({
@@ -288,6 +346,6 @@ $(document).ready(function ($) {
     // iniat WOW Js
     // new WOW().init();
 
-});
+})(jQuery);
 
 

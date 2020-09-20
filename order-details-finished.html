@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -25,7 +26,17 @@
             <div class="container">
                 <div class="headerTopWrapper">
                     <div class="headerTopUser">
-                        <a href="login.html"> <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> </a>
+                        <div class="userDrop"> 
+                            <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> 
+                            <ul class="userDropDown">
+                                <a href="store.html"> <img src="images/user-icon-1.png" alt="icon"> <span> متجرى </span> </a>
+                                <a href="profile-orders.html"> <img src="images/user-icon-2.png" alt="icon"> <span> طلباتى </span> </a>
+                                <a href="profile-auctions.html"> <img src="images/user-icon-3.png" alt="icon"> <span> مزايداتى </span> </a>
+                                <a href="profile-address.html"> <img src="images/user-icon-4.png" alt="icon"> <span> عناوينى </span> </a>
+                                <a href="profile.html"> <img src="images/user-icon-5.png" alt="icon"> <span> الملف الشخصى</span> </a>
+                                <a href="index.html"> <img src="images/user-icon-6.png" alt="icon"> <span>  تسجيل الخروج</span> </a>
+                            </ul>
+                        </div>
                         <a href="store-signUp.html"> <img src="images/icon-store.png" alt="icon"> <span> تسجيل كتاجر </span> </a>
                         <a href="favourite.html"> <img src="images/icon-fav.png" alt="icon"> <span> المنتجات المفضلة <span> (0) </span></span> </a>
                     </div>
@@ -77,11 +88,14 @@
                         <input type="text" placeholder="اكتب بحثك هنا">
                         <button class="redBtn"> <i class="icofont-search-1"></i> </button>
                     </form>
-                    <a class="headerCart" href="cart.html">
-                        <div class="headerCartIcon"> <img src="images/icon-basket.png" alt="icon"></div>
-                        <label> عربة التسوق  </label>
-                        <span> (0) </span>
-                    </a>
+                    <div class="userIcons">
+                        <a class="headerNotifications" href="favourite.html"> <i class="far fa-bell"></i> </a>
+                        <a class="headerCart" href="cart.html">
+                            <div class="headerCartIcon"> <img src="images/icon-basket.png" alt="icon"></div>
+                            <label> عربة التسوق  </label>
+                            <span> (0) </span>
+                        </a>
+                    </div>  
                     <div class="navBtn"> <span></span><span></span><span></span></div>
                     <div class="headerOverlay"></div>
                 </div>
@@ -91,7 +105,7 @@
         <div class="headerNav">
             <div class="container">
                 <ul>
-                    <li class="active"> <a href="index.html"> الرئيسية </a> </li>
+                    <li> <a href="index.html"> الرئيسية </a> </li>
                     <li> <a href="elect.html"> الالكترونيات </a> </li>
                     <li> <a href="cars.html"> سيارات  </a> </li>
                     <li> <a href="#"> قطع غيار </a> </li>
@@ -115,54 +129,126 @@
     <!-- Page Info  -->
     <div class="pageInfo">
         <div class="container">
-            <h1> إنشاء حساب </h1>
+            <h1> طلباتى </h1>
             <div class="bradCrumbBox"> 
                 <i class="fas fa-home"></i>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
-                    <li class="breadcrumb-item active" aria-current="page"> إنشاء حساب</li>
+                    <li class="breadcrumb-item"> <a href="profile-orders.html"> طلباتى </a> </li>
+                    <li class="breadcrumb-item active" aria-current="page">  تفاصيل الطلب </li>
                 </ol>
             </div>
         </div>
     </div>
 
-    <!-- Form Page  -->
-    <div class="formPage secPadding">
+    <!-- orders Page  -->
+    <div class="ordersPage secPadding">
         <div class="container">
-            <div class="formBox">
-                <div class="formHead">
-                    <h2> إنشاء حساب </h2>
-                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+            <div class="status">
+                <div class="statusStep finished"> <span></span> قيد التنفيذ </div>
+                <div class="statusStep finished"> <span></span> جاهز للشحن </div>
+                <div class="statusStep finished"> <span></span> قيد التوصيل </div>
+                <div class="statusStep finished"> <span></span> تم إستلامها </div>
+            </div>
+            <div class="orderTable">
+                <div class="tableBox cartTablePc">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col"> الصورة </th>
+                                <th scope="col"> اسم المنتج </th>
+                                <th scope="col"> اللون </th>
+                                <th scope="col"> الماركة </th>
+                                <th scope="col"> السعر </th>
+                                <th scope="col"> الكمية </th>
+                                <th scope="col"> الاجمالى </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <img src="images/phone-1.png" alt="item" class="img-fluid"> </td>
+                                <td> يتم كتابة اسم المنتج </td>
+                                <td> رصاصى </td>
+                                <td> اتش بى </td>
+                                <td> 30 رس </td>
+                                <td> 01 </td>
+                                <td> 30 رس </td>
+                            </tr>
+                            <tr>
+                                <td> <img src="images/phone-1.png" alt="item" class="img-fluid"> </td>
+                                <td> يتم كتابة اسم المنتج </td>
+                                <td> رصاصى </td>
+                                <td> اتش بى </td>
+                                <td> 30 رس </td>
+                                <td> 01 </td>
+                                <td> 30 رس </td>
+                            </tr>
+                            <tr>
+                                <td> <img src="images/phone-1.png" alt="item" class="img-fluid"> </td>
+                                <td> يتم كتابة اسم المنتج </td>
+                                <td> رصاصى </td>
+                                <td> اتش بى </td>
+                                <td> 30 رس </td>
+                                <td> 01 </td>
+                                <td> 30 رس </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="formBody">
-                    <form action="profile.html">
-                        <div class="field">
-                            <label> اسم المستخدم </label>
-                            <input type="text" class="form-control" placeholder="برجاء ادخال اسم المستخدم">
-                        </div>
-                        <div class="field">
-                            <label> رقم الجوال </label>
-                            <input type="text" class="form-control" placeholder="برجاء ادخال رقم الجوال">
-                        </div>
-                        <div class="field">
-                            <label> البريد الالكترونى </label>
-                            <input type="email" class="form-control" placeholder="برجاء ادخال رقم الجوال">
-                        </div>
-                        <div class="field fieldIcon">
-                            <label>  كلمة المرور </label>
-                            <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور">
-                            <span class="showPassword"> <i class="far fa-eye"></i> </span>
-                        </div>
-                        <div class="field fieldIcon">
-                            <label>  تأكيد كلمة المرور </label>
-                            <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور">
-                            <span class="showPassword"> <i class="far fa-eye"></i> </span>
-                        </div>
-                        <button type="submit" class="redBtn"> إنشاء حساب </button>
-                    </form>
+                <div class="mobileItems">
+                    <div class="mobileItem">
+                        <div class="mobileItemData">
+                            <img src="images/phone-1.png" alt="item" class="img-fluid">
+                            <div class="mobileItemDetails">
+                                <h3> يتم كتابة اسم المنتج </h3>
+                                <p> <label> اللون :</label> <span> رصاصى </span></p>
+                                <p> <label> الماركة :</label> <span> اتش بى </span></p>
+                                <p> <label> السعر : </label> <span> 30 رس </span></p>
+                                <p> <label> الكمية: </label> <span> 01 </span></p>
+                                <p> <label> الاجمالى : </label> <span>30 رس </span></p>
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="mobileItem">
+                        <div class="mobileItemData">
+                            <img src="images/phone-1.png" alt="item" class="img-fluid">
+                            <div class="mobileItemDetails">
+                                <h3> يتم كتابة اسم المنتج </h3>
+                                <p> <label> اللون :</label> <span> رصاصى </span></p>
+                                <p> <label> الماركة :</label> <span> اتش بى </span></p>
+                                <p> <label> السعر : </label> <span> 30 رس </span></p>
+                                <p> <label> الكمية: </label> <span> 01 </span></p>
+                                <p> <label> الاجمالى : </label> <span>30 رس </span></p>
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="mobileItem">
+                        <div class="mobileItemData">
+                            <img src="images/phone-1.png" alt="item" class="img-fluid">
+                            <div class="mobileItemDetails">
+                                <h3> يتم كتابة اسم المنتج </h3>
+                                <p> <label> اللون :</label> <span> رصاصى </span></p>
+                                <p> <label> الماركة :</label> <span> اتش بى </span></p>
+                                <p> <label> السعر : </label> <span> 30 رس </span></p>
+                                <p> <label> الكمية: </label> <span> 01 </span></p>
+                                <p> <label> الاجمالى : </label> <span>30 رس </span></p>
+                            </div>
+                        </div>              
+                    </div>
                 </div>
-                <div class="formFooter">
-                    <p> <span> لديك حساب بالفعل ؟  </span> <a href="login.html"> إضغط هنا</a> </p>
+            </div>
+            <div class="orderPageDetails">
+                <h2> معلومات الطلب </h2>
+                <div class="orderDetailsList">
+                    <ul>
+                        <li> <label> رقم الطلب </label> <span> #123456 </span></li>
+                        <li> <label>  تاريخ الطلب </label> <span> 2020 / 2 / 14 </span></li>
+                        <li> <label>  طريقه الدفع </label> <span> الدفع عند الاستلام </span></li>
+                        <li> <label> المجموع </label> <span> 90 رس</span></li>
+                        <li> <label>  تكلفة الشحن  </label> <span> 90  رس</span></li>
+                        <li> <label> القيمة المضافة </label> <span> 90 رس</span></li>
+                        <li> <label>  المجموع الكلى </label> <span> 90 رس</span></li>
+                    </ul>
                 </div>
             </div>
         </div>

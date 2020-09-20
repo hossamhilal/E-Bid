@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -25,7 +26,17 @@
             <div class="container">
                 <div class="headerTopWrapper">
                     <div class="headerTopUser">
-                        <a href="login.html"> <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> </a>
+                        <div class="userDrop"> 
+                            <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> 
+                            <ul class="userDropDown">
+                                <a href="store.html"> <img src="images/user-icon-1.png" alt="icon"> <span> متجرى </span> </a>
+                                <a href="profile-orders.html"> <img src="images/user-icon-2.png" alt="icon"> <span> طلباتى </span> </a>
+                                <a href="profile-auctions.html"> <img src="images/user-icon-3.png" alt="icon"> <span> مزايداتى </span> </a>
+                                <a href="profile-address.html"> <img src="images/user-icon-4.png" alt="icon"> <span> عناوينى </span> </a>
+                                <a href="profile.html"> <img src="images/user-icon-5.png" alt="icon"> <span> الملف الشخصى</span> </a>
+                                <a href="index.html"> <img src="images/user-icon-6.png" alt="icon"> <span>  تسجيل الخروج</span> </a>
+                            </ul>
+                        </div>
                         <a href="store-signUp.html"> <img src="images/icon-store.png" alt="icon"> <span> تسجيل كتاجر </span> </a>
                         <a href="favourite.html"> <img src="images/icon-fav.png" alt="icon"> <span> المنتجات المفضلة <span> (0) </span></span> </a>
                     </div>
@@ -77,11 +88,14 @@
                         <input type="text" placeholder="اكتب بحثك هنا">
                         <button class="redBtn"> <i class="icofont-search-1"></i> </button>
                     </form>
-                    <a class="headerCart" href="cart.html">
-                        <div class="headerCartIcon"> <img src="images/icon-basket.png" alt="icon"></div>
-                        <label> عربة التسوق  </label>
-                        <span> (0) </span>
-                    </a>
+                    <div class="userIcons">
+                        <a class="headerNotifications" href="favourite.html"> <i class="far fa-bell"></i> </a>
+                        <a class="headerCart" href="cart.html">
+                            <div class="headerCartIcon"> <img src="images/icon-basket.png" alt="icon"></div>
+                            <label> عربة التسوق  </label>
+                            <span> (0) </span>
+                        </a>
+                    </div>  
                     <div class="navBtn"> <span></span><span></span><span></span></div>
                     <div class="headerOverlay"></div>
                 </div>
@@ -91,7 +105,7 @@
         <div class="headerNav">
             <div class="container">
                 <ul>
-                    <li class="active"> <a href="index.html"> الرئيسية </a> </li>
+                    <li> <a href="index.html"> الرئيسية </a> </li>
                     <li> <a href="elect.html"> الالكترونيات </a> </li>
                     <li> <a href="cars.html"> سيارات  </a> </li>
                     <li> <a href="#"> قطع غيار </a> </li>
@@ -115,54 +129,37 @@
     <!-- Page Info  -->
     <div class="pageInfo">
         <div class="container">
-            <h1> إنشاء حساب </h1>
+            <h1>  مزايدة 2542542  </h1>
             <div class="bradCrumbBox"> 
                 <i class="fas fa-home"></i>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
-                    <li class="breadcrumb-item active" aria-current="page"> إنشاء حساب</li>
+                    <li class="breadcrumb-item"> <a href="profile-auctions.html"> مزايداتى </a> </li>
+                    <li class="breadcrumb-item active" aria-current="page"> مزايدة 2542542 </li>
                 </ol>
             </div>
         </div>
     </div>
 
-    <!-- Form Page  -->
-    <div class="formPage secPadding">
+    <!-- Auction Page  -->
+    <div class="auctionPage secPadding">
         <div class="container">
-            <div class="formBox">
-                <div class="formHead">
-                    <h2> إنشاء حساب </h2>
-                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+            <div class="auctionCounter">
+                <div class="timeBlock"> 
+                    <div class="timeBlockNumbers" id="days"> <span> </span> <span> </span></div>
+                    <h3> يوم </h3>
                 </div>
-                <div class="formBody">
-                    <form action="profile.html">
-                        <div class="field">
-                            <label> اسم المستخدم </label>
-                            <input type="text" class="form-control" placeholder="برجاء ادخال اسم المستخدم">
-                        </div>
-                        <div class="field">
-                            <label> رقم الجوال </label>
-                            <input type="text" class="form-control" placeholder="برجاء ادخال رقم الجوال">
-                        </div>
-                        <div class="field">
-                            <label> البريد الالكترونى </label>
-                            <input type="email" class="form-control" placeholder="برجاء ادخال رقم الجوال">
-                        </div>
-                        <div class="field fieldIcon">
-                            <label>  كلمة المرور </label>
-                            <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور">
-                            <span class="showPassword"> <i class="far fa-eye"></i> </span>
-                        </div>
-                        <div class="field fieldIcon">
-                            <label>  تأكيد كلمة المرور </label>
-                            <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور">
-                            <span class="showPassword"> <i class="far fa-eye"></i> </span>
-                        </div>
-                        <button type="submit" class="redBtn"> إنشاء حساب </button>
-                    </form>
+                <div class="timeBlock"> 
+                    <div class="timeBlockNumbers" id="hours"> <span> </span> <span> </span></div>
+                    <h3> ساعة </h3>
                 </div>
-                <div class="formFooter">
-                    <p> <span> لديك حساب بالفعل ؟  </span> <a href="login.html"> إضغط هنا</a> </p>
+                <div class="timeBlock"> 
+                    <div class="timeBlockNumbers" id="minutes"> <span> </span> <span> </span></div>
+                    <h3> دقيقة </h3>
+                </div>
+                <div class="timeBlock"> 
+                    <div class="timeBlockNumbers" id="seconds"> <span> </span> <span> </span></div>
+                    <h3> ثانية </h3>
                 </div>
             </div>
         </div>
@@ -254,6 +251,7 @@
         </div>
     </section>
 
+
     <!-- JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -262,5 +260,48 @@
     <script src="plugins/jqueryUi/jquery-ui.min.js"></script>
     <script src="js/custom.js"></script>
 
+    <script>
+        // (function($) {
+            // Set the date we're counting down to
+            var countDownDate = new Date("Nov 5, 2020 00:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+            // Get today's date and time
+            var now = new Date().getTime();
+            
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the result in the element with id="demo"
+            // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            // + minutes + "m " + seconds + "s ";
+
+            // let splitDays = days.substring(0,1); //'<span>'+ +'</span>'
+            $('#days').text(splitDays);
+            $('#hours').text(hours);
+            $('#minutes').text(minutes);
+            $('#seconds').text(seconds);
+            
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+            }, 1000);
+
+            // <div class="timeBlockNumbers" id="days"> <span> </span> <span> </span></div>
+            // <div class="timeBlockNumbers" id="hours"> <span> </span> <span> </span></div>
+            // <div class="timeBlockNumbers" id="minutes"> <span> </span> <span> </span></div>
+            // <div class="timeBlockNumbers" id="seconds"> <span> </span> <span> </span></div>
+        // })(jQuery);
+    </script>
 </body>
 </html>

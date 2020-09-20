@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -25,7 +26,17 @@
             <div class="container">
                 <div class="headerTopWrapper">
                     <div class="headerTopUser">
-                        <a href="login.html"> <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> </a>
+                        <div class="userDrop"> 
+                            <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> 
+                            <ul class="userDropDown">
+                                <a href="store.html"> <img src="images/user-icon-1.png" alt="icon"> <span> متجرى </span> </a>
+                                <a href="profile-orders.html"> <img src="images/user-icon-2.png" alt="icon"> <span> طلباتى </span> </a>
+                                <a href="profile-auctions.html"> <img src="images/user-icon-3.png" alt="icon"> <span> مزايداتى </span> </a>
+                                <a href="profile-address.html"> <img src="images/user-icon-4.png" alt="icon"> <span> عناوينى </span> </a>
+                                <a href="profile.html"> <img src="images/user-icon-5.png" alt="icon"> <span> الملف الشخصى</span> </a>
+                                <a href="index.html"> <img src="images/user-icon-6.png" alt="icon"> <span>  تسجيل الخروج</span> </a>
+                            </ul>
+                        </div>
                         <a href="store-signUp.html"> <img src="images/icon-store.png" alt="icon"> <span> تسجيل كتاجر </span> </a>
                         <a href="favourite.html"> <img src="images/icon-fav.png" alt="icon"> <span> المنتجات المفضلة <span> (0) </span></span> </a>
                     </div>
@@ -77,11 +88,14 @@
                         <input type="text" placeholder="اكتب بحثك هنا">
                         <button class="redBtn"> <i class="icofont-search-1"></i> </button>
                     </form>
-                    <a class="headerCart" href="cart.html">
-                        <div class="headerCartIcon"> <img src="images/icon-basket.png" alt="icon"></div>
-                        <label> عربة التسوق  </label>
-                        <span> (0) </span>
-                    </a>
+                    <div class="userIcons">
+                        <a class="headerNotifications" href="favourite.html"> <i class="far fa-bell"></i> </a>
+                        <a class="headerCart" href="cart.html">
+                            <div class="headerCartIcon"> <img src="images/icon-basket.png" alt="icon"></div>
+                            <label> عربة التسوق  </label>
+                            <span> (0) </span>
+                        </a>
+                    </div>  
                     <div class="navBtn"> <span></span><span></span><span></span></div>
                     <div class="headerOverlay"></div>
                 </div>
@@ -91,7 +105,7 @@
         <div class="headerNav">
             <div class="container">
                 <ul>
-                    <li class="active"> <a href="index.html"> الرئيسية </a> </li>
+                    <li> <a href="index.html"> الرئيسية </a> </li>
                     <li> <a href="elect.html"> الالكترونيات </a> </li>
                     <li> <a href="cars.html"> سيارات  </a> </li>
                     <li> <a href="#"> قطع غيار </a> </li>
@@ -115,54 +129,141 @@
     <!-- Page Info  -->
     <div class="pageInfo">
         <div class="container">
-            <h1> إنشاء حساب </h1>
+            <h1> المفضلة</h1>
             <div class="bradCrumbBox"> 
                 <i class="fas fa-home"></i>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
-                    <li class="breadcrumb-item active" aria-current="page"> إنشاء حساب</li>
+                    <li class="breadcrumb-item active" aria-current="page"> المفضلة </li>
                 </ol>
             </div>
         </div>
     </div>
 
-    <!-- Form Page  -->
-    <div class="formPage secPadding">
+    <!-- favourite Page  -->
+    <div class="cartPage secPadding">
         <div class="container">
-            <div class="formBox">
-                <div class="formHead">
-                    <h2> إنشاء حساب </h2>
-                    <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى </p>
+            <div class="tableBox cartTablePc favTablePc">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col"> الصورة </th>
+                            <th scope="col"> اسم المنتج </th>
+                            <th scope="col"> السعر </th>
+                            <th scope="col"> الكمية </th>
+                            <th scope="col"> الاجمالى </th>
+                            <th scope="col"> اضف للسلة </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <img src="images/phone-1.png" alt="item" class="img-fluid"> </td>
+                            <td> يتم كتابة اسم المنتج </td>
+                            <td> 30 رس </td>
+                            <td> 
+                                <div class="mount cartMount">
+                                    <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
+                                    <span class="mountNumber"> 1 </span>
+                                    <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
+                                </div> 
+                            </td>
+                            <td> 30 رس  </td>
+                            <td> <a href="#" class="redBtn" data-toggle="modal" data-target="#favModal"> أضف الى السلة </a> <span class="deletecartItem"> <i class="icofont-close-line"></i> </span></td>
+                        </tr>
+                        <tr>
+                            <td> <img src="images/phone-1.png" alt="item" class="img-fluid"> </td>
+                            <td> يتم كتابة اسم المنتج </td>
+                            <td> 30 رس </td>
+                            <td> 
+                                <div class="mount cartMount">
+                                    <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
+                                    <span class="mountNumber"> 1 </span>
+                                    <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
+                                </div> 
+                            </td>
+                            <td> 30 رس  </td>
+                            <td> <a href="#" class="redBtn" data-toggle="modal" data-target="#favModal"> أضف الى السلة </a> <span class="deletecartItem"> <i class="icofont-close-line"></i> </span></td>
+                        </tr>
+                        <tr>
+                            <td> <img src="images/phone-1.png" alt="item" class="img-fluid"> </td>
+                            <td> يتم كتابة اسم المنتج </td>
+                            <td> 30 رس </td>
+                            <td> 
+                                <div class="mount cartMount">
+                                    <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
+                                    <span class="mountNumber"> 1 </span>
+                                    <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
+                                </div> 
+                            </td>
+                            <td> 30 رس  </td>
+                            <td> <a href="#" class="redBtn" data-toggle="modal" data-target="#favModal"> أضف الى السلة </a> <span class="deletecartItem"> <i class="icofont-close-line"></i> </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mobileItems">
+                <div class="mobileItem">
+                    <div class="mobileItemData">
+                        <img src="images/phone-1.png" alt="item" class="img-fluid">
+                        <div class="mobileItemDetails">
+                            <h3> يتم كتابة اسم المنتج </h3>
+                            <p> <label> السعر : </label> <span> 30 رس </span></p>
+                            <p> <label> الاجمالى : </label> <span>30 رس </span></p>
+                        </div>
+                    </div>
+                    <div class="mobileItemFooter">
+                        <div class="mount cartMount">
+                            <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
+                            <span class="mountNumber"> 1 </span>
+                            <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
+                        </div>
+                        <div class="mobileItemActions">
+                            <a href="#" class="redBtn" data-toggle="modal" data-target="#favModal"> <i class="icofont-cart-alt"></i> </a>
+                            <span class="deletecartItem"> <i class="icofont-close-line"></i> </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="formBody">
-                    <form action="profile.html">
-                        <div class="field">
-                            <label> اسم المستخدم </label>
-                            <input type="text" class="form-control" placeholder="برجاء ادخال اسم المستخدم">
+                <div class="mobileItem">
+                    <div class="mobileItemData">
+                        <img src="images/phone-1.png" alt="item" class="img-fluid">
+                        <div class="mobileItemDetails">
+                            <h3> يتم كتابة اسم المنتج </h3>
+                            <p> <label> السعر : </label> <span> 30 رس </span></p>
+                            <p> <label> الاجمالى : </label> <span>30 رس </span></p>
                         </div>
-                        <div class="field">
-                            <label> رقم الجوال </label>
-                            <input type="text" class="form-control" placeholder="برجاء ادخال رقم الجوال">
+                    </div>
+                    <div class="mobileItemFooter">
+                        <div class="mount cartMount">
+                            <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
+                            <span class="mountNumber"> 1 </span>
+                            <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
                         </div>
-                        <div class="field">
-                            <label> البريد الالكترونى </label>
-                            <input type="email" class="form-control" placeholder="برجاء ادخال رقم الجوال">
+                        <div class="mobileItemActions">
+                            <a href="#" class="redBtn" data-toggle="modal" data-target="#favModal"> <i class="icofont-cart-alt"></i> </a>
+                            <span class="deletecartItem"> <i class="icofont-close-line"></i> </span>
                         </div>
-                        <div class="field fieldIcon">
-                            <label>  كلمة المرور </label>
-                            <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور">
-                            <span class="showPassword"> <i class="far fa-eye"></i> </span>
-                        </div>
-                        <div class="field fieldIcon">
-                            <label>  تأكيد كلمة المرور </label>
-                            <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور">
-                            <span class="showPassword"> <i class="far fa-eye"></i> </span>
-                        </div>
-                        <button type="submit" class="redBtn"> إنشاء حساب </button>
-                    </form>
+                    </div>
                 </div>
-                <div class="formFooter">
-                    <p> <span> لديك حساب بالفعل ؟  </span> <a href="login.html"> إضغط هنا</a> </p>
+                <div class="mobileItem">
+                    <div class="mobileItemData">
+                        <img src="images/phone-1.png" alt="item" class="img-fluid">
+                        <div class="mobileItemDetails">
+                            <h3> يتم كتابة اسم المنتج </h3>
+                            <p> <label> السعر : </label> <span> 30 رس </span></p>
+                            <p> <label> الاجمالى : </label> <span>30 رس </span></p>
+                        </div>
+                    </div>
+                    <div class="mobileItemFooter">
+                        <div class="mount cartMount">
+                            <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
+                            <span class="mountNumber"> 1 </span>
+                            <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
+                        </div>
+                        <div class="mobileItemActions">
+                            <a href="#" class="redBtn" data-toggle="modal" data-target="#favModal"> <i class="icofont-cart-alt"></i> </a>
+                            <span class="deletecartItem"> <i class="icofont-close-line"></i> </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,6 +354,22 @@
             </div>
         </div>
     </section>
+
+    <!-- Favourite Modal -->
+    <div class="modal fade" id="favModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="favModalContent">
+                    <div class="successIcon"> <i class="icofont-check-alt"></i> </div>
+                    <h2> تم إضافة المنتج في سلة التسوق بنجاح</h2>
+                    <div class="modalActions">
+                        <a href="#" class="greyBtn" data-dismiss="modal"> تكملة التسوق </a>
+                        <a href="cart.html" class="greyBtn"> اعرض السلة </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- JS -->
     <script src="js/jquery-3.2.1.min.js"></script>

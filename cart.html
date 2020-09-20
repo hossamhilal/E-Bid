@@ -26,7 +26,17 @@
             <div class="container">
                 <div class="headerTopWrapper">
                     <div class="headerTopUser">
-                        <a href="login.html"> <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> </a>
+                        <div class="userDrop"> 
+                            <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> 
+                            <ul class="userDropDown">
+                                <a href="store.html"> <img src="images/user-icon-1.png" alt="icon"> <span> متجرى </span> </a>
+                                <a href="profile-orders.html"> <img src="images/user-icon-2.png" alt="icon"> <span> طلباتى </span> </a>
+                                <a href="profile-auctions.html"> <img src="images/user-icon-3.png" alt="icon"> <span> مزايداتى </span> </a>
+                                <a href="profile-address.html"> <img src="images/user-icon-4.png" alt="icon"> <span> عناوينى </span> </a>
+                                <a href="profile.html"> <img src="images/user-icon-5.png" alt="icon"> <span> الملف الشخصى</span> </a>
+                                <a href="index.html"> <img src="images/user-icon-6.png" alt="icon"> <span>  تسجيل الخروج</span> </a>
+                            </ul>
+                        </div>
                         <a href="store-signUp.html"> <img src="images/icon-store.png" alt="icon"> <span> تسجيل كتاجر </span> </a>
                         <a href="favourite.html"> <img src="images/icon-fav.png" alt="icon"> <span> المنتجات المفضلة <span> (0) </span></span> </a>
                     </div>
@@ -79,12 +89,12 @@
                         <button class="redBtn"> <i class="icofont-search-1"></i> </button>
                     </form>
                     <div class="userIcons">
-                        <div class="headerNotifications"> <i class="far fa-bell"></i> </div>
-                        <div class="headerCart">
+                        <a class="headerNotifications" href="favourite.html"> <i class="far fa-bell"></i> </a>
+                        <a class="headerCart" href="cart.html">
                             <div class="headerCartIcon"> <img src="images/icon-basket.png" alt="icon"></div>
                             <label> عربة التسوق  </label>
                             <span> (0) </span>
-                        </div>
+                        </a>
                     </div>  
                     <div class="navBtn"> <span></span><span></span><span></span></div>
                     <div class="headerOverlay"></div>
@@ -97,7 +107,7 @@
                 <ul>
                     <li> <a href="index.html"> الرئيسية </a> </li>
                     <li> <a href="elect.html"> الالكترونيات </a> </li>
-                    <li class="active"> <a href="cars.html"> سيارات  </a> </li>
+                    <li> <a href="cars.html"> سيارات  </a> </li>
                     <li> <a href="#"> قطع غيار </a> </li>
                     <li> <a href="#"> ملابس </a> </li>
                     <li> <a href="#"> عروض شهرية </a> </li>
@@ -133,7 +143,7 @@
     <!-- Cart Page  -->
     <div class="cartPage secPadding">
         <div class="container">
-            <form action="">
+            <form action="cart-pay.html">
                 <div class="tableBox cartTablePc">
                     <table class="table table-bordered">
                         <thead>
@@ -196,62 +206,68 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="cartTableMobile">
-                    <div class="cartMobileItem">
-                        <img src="images/phone-1.png" alt="item" class="img-fluid">
-                        <div class="cartMobileItemDetails">
-                            <h3> يتم كتابة اسم المنتج </h3>
-                            <div class="flexRow"> <span> رصاصى </span> <span> اتش بى  </span></div>
-                            <div class="flexRow">
-                                <span> 30 رس </span> 
-                                <div class="mount cartMount">
-                                    <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
-                                    <span class="mountNumber"> 1 </span>
-                                    <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
-                                </div> 
-                            </div>
-                            <div class="flexRow">
-                                <div> <label> الاجمالى: </label> <span> 30 رس </span>   </div> 
-                                <span class="deletecartItem"> <i class="icofont-close-line"></i> </span>
+                <div class="mobileItems">
+                    <div class="mobileItem">
+                        <div class="mobileItemData">
+                            <img src="images/phone-1.png" alt="item" class="img-fluid">
+                            <div class="mobileItemDetails">
+                                <h3> يتم كتابة اسم المنتج </h3>
+                                <p> <label> اللون :</label> <span> رصاصى </span></p>
+                                <p> <label> الماركة :</label> <span> اتش بى </span></p>
+                                <p> <label> السعر : </label> <span> 30 رس </span></p>
+                                <p> <label> الكمية: </label> <span> 01 </span></p>
+                                <p> <label> الاجمالى : </label> <span>30 رس </span></p>
                             </div>
                         </div>
-                    </div>
-                    <div class="cartMobileItem">
-                        <img src="images/phone-1.png" alt="item" class="img-fluid">
-                        <div class="cartMobileItemDetails">
-                            <h3> يتم كتابة اسم المنتج </h3>
-                            <div class="flexRow"> <span> رصاصى </span> <span> اتش بى  </span></div>
-                            <div class="flexRow">
-                                <span> 30 رس </span> 
-                                <div class="mount cartMount">
-                                    <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
-                                    <span class="mountNumber"> 1 </span>
-                                    <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
-                                </div> 
-                            </div>
-                            <div class="flexRow">
-                                <div> <label> الاجمالى: </label> <span> 30 رس </span>   </div> 
-                                <span class="deletecartItem"> <i class="icofont-close-line"></i> </span>
-                            </div>
+                        <div class="mobileItemFooter">
+                            <div class="mount cartMount">
+                                <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
+                                <span class="mountNumber"> 1 </span>
+                                <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
+                            </div> 
+                            <span class="deletecartItem"> <i class="icofont-close-line"></i> </span>
                         </div>
                     </div>
-                    <div class="cartMobileItem">
-                        <img src="images/phone-1.png" alt="item" class="img-fluid">
-                        <div class="cartMobileItemDetails">
-                            <h3> يتم كتابة اسم المنتج </h3>
-                            <div class="flexRow"> <span> رصاصى </span> <span> اتش بى  </span></div>
-                            <div class="flexRow">
-                                <span> 30 رس </span> 
-                                <div class="mount cartMount">
-                                    <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
-                                    <span class="mountNumber"> 1 </span>
-                                    <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
-                                </div> 
+                    <div class="mobileItem">
+                        <div class="mobileItemData">
+                            <img src="images/phone-1.png" alt="item" class="img-fluid">
+                            <div class="mobileItemDetails">
+                                <h3> يتم كتابة اسم المنتج </h3>
+                                <p> <label> اللون :</label> <span> رصاصى </span></p>
+                                <p> <label> الماركة :</label> <span> اتش بى </span></p>
+                                <p> <label> السعر : </label> <span> 30 رس </span></p>
+                                <p> <label> الكمية: </label> <span> 01 </span></p>
+                                <p> <label> الاجمالى : </label> <span>30 رس </span></p>
                             </div>
-                            <div class="flexRow">
-                                <div> <label> الاجمالى: </label> <span> 30 رس </span>   </div> 
-                                <span class="deletecartItem"> <i class="icofont-close-line"></i> </span>
+                        </div>
+                        <div class="mobileItemFooter">
+                            <div class="mount cartMount">
+                                <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
+                                <span class="mountNumber"> 1 </span>
+                                <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
+                            </div> 
+                            <span class="deletecartItem"> <i class="icofont-close-line"></i> </span>
+                        </div>
+                    </div>
+                    <div class="mobileItem">
+                        <div class="mobileItemData">
+                            <img src="images/phone-1.png" alt="item" class="img-fluid">
+                            <div class="mobileItemDetails">
+                                <h3> يتم كتابة اسم المنتج </h3>
+                                <p> <label> اللون :</label> <span> رصاصى </span></p>
+                                <p> <label> الماركة :</label> <span> اتش بى </span></p>
+                                <p> <label> السعر : </label> <span> 30 رس </span></p>
+                                <p> <label> الكمية: </label> <span> 01 </span></p>
+                                <p> <label> الاجمالى : </label> <span>30 رس </span></p>
                             </div>
+                        </div>
+                        <div class="mobileItemFooter">
+                            <div class="mount cartMount">
+                                <span class="mountBtn plusBtn"> <i class="icofont-plus"></i> </span>
+                                <span class="mountNumber"> 1 </span>
+                                <span class="mountBtn minusBtn"> <i class="icofont-minus"></i> </span>
+                            </div> 
+                            <span class="deletecartItem"> <i class="icofont-close-line"></i> </span>
                         </div>
                     </div>
                 </div>
