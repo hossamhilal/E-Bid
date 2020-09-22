@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="plugins/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/jqueryUi/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/xIcon.png" type="image/x-icon" />
+    <title> E-Bid </title>
+</head>
+
+<body>
+
+    <!-- MAIN HEADER -->
+    <header>
+        <div class="headerTop">
+            <div class="container">
+                <div class="headerTopWrapper">
+                    <div class="headerTopUser">
+                        <div class="userDrop"> 
+                            <img src="images/icon-user.png" alt="icon"> <span> تسجيل </span> 
+                            <ul class="userDropDown">
+                                <a href="store.html"> <img src="images/user-icon-1.png" alt="icon"> <span> متجرى </span> </a>
+                                <a href="profile-orders.html"> <img src="images/user-icon-2.png" alt="icon"> <span> طلباتى </span> </a>
+                                <a href="profile-auctions.html"> <img src="images/user-icon-3.png" alt="icon"> <span> مزايداتى </span> </a>
+                                <a href="profile-address.html"> <img src="images/user-icon-4.png" alt="icon"> <span> عناوينى </span> </a>
+                                <a href="profile.html"> <img src="images/user-icon-5.png" alt="icon"> <span> الملف الشخصى</span> </a>
+                                <a href="index.html"> <img src="images/user-icon-6.png" alt="icon"> <span>  تسجيل الخروج</span> </a>
+                            </ul>
+                        </div>
+                        <a href="store-signUp.html"> <img src="images/icon-store.png" alt="icon"> <span> تسجيل كتاجر </span> </a>
+                        <a href="favourite.html"> <img src="images/icon-fav.png" alt="icon"> <span> المنتجات المفضلة <span> (0) </span></span> </a>
+                    </div>
+                    <div class="headerTopMenus">
+                        <div class="dropBox">
+                            <img src="images/icon-global.png" alt="icon">
+                            <span> اللغة : </span>
+                            <select>
+                                <option value="0"> عربي </option>
+                                <option value="1"> En </option>
+                            </select>
+                        </div>
+                        <div class="dropBox">
+                            <img src="images/icon-coin.png" alt="icon">
+                            <span>  : العملة</span>
+                            <select>
+                                <option value="0"> Le </option>
+                                <option value="1"> Sar </option>
+                                <option value="2"> Ep </option>
+                                <option value="3"> USD</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="headerMiddle">
+            <div class="container">
+                <div class="headerMiddleBox">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="english" class="img-fluid" width="100%">
+                        </a>
+                    </div>
+                    <form class="headerFilter">
+                        <div class="headerFilterCats">
+                            <div class="filterToggle"> <span></span> <span></span> <span></span> </div>
+                            <select>
+                                <option value="0" selected> كل الاقسام </option>
+                                <option value="1"> الكترونيات </option>
+                                <option value="2"> سيارات </option>
+                                <option value="3"> قطع غيار </option>
+                                <option value="4"> ملابس </option>
+                                <option value="5"> الأطفال والواليد </option>
+                                <option value="6"> الاكسسورات </option>
+                            </select>
+                        </div>
+                        <input type="text" placeholder="اكتب بحثك هنا">
+                        <button class="redBtn"> <i class="icofont-search-1"></i> </button>
+                    </form>
+                    <div class="userIcons">
+                        <a class="headerNotifications" href="favourite.html"> <i class="far fa-bell"></i> </a>
+                        <a class="headerCart" href="cart.html">
+                            <div class="headerCartIcon"> <img src="images/icon-basket.png" alt="icon"></div>
+                            <label> عربة التسوق  </label>
+                            <span> (0) </span>
+                        </a>
+                    </div>  
+                    <div class="navBtn"> <span></span><span></span><span></span></div>
+                    <div class="headerOverlay"></div>
+                </div>
+            </div>
+        </div>
+              
+        <div class="headerNav">
+            <div class="container">
+                <ul>
+                    <li> <a href="index.html"> الرئيسية </a> </li>
+                    <li> <a href="elect.html"> الالكترونيات </a> </li>
+                    <li> <a href="cars.html"> سيارات  </a> </li>
+                    <li> <a href="#"> قطع غيار </a> </li>
+                    <li> <a href="#"> ملابس </a> </li>
+                    <li> <a href="#"> عروض شهرية </a> </li>
+                    <li> <a href="auctions.html"> مزادات </a> </li>
+                </ul>     
+            </div>
+        </div>
+    </header>
+
+    <!-- SHARE  -->
+    <div class="share">
+        <a href="#" class="facebook"> <i class="icofont-facebook"></i> <span> facebook </span></a>
+        <a href="#" class="youtube"> <i class="icofont-youtube"></i> <span> youtube </span></a>
+        <a href="#" class="twitter"> <i class="icofont-twitter"></i> <span> twitter </span></a>
+        <a href="#" class="whatsapp"> <i class="icofont-whatsapp"></i> <span> whatsapp </span></a>
+        <a href="#" class="email"> <i class="icofont-email"></i> <span> email </span></a>
+    </div>
+
+    <!-- Page Info  -->
+    <div class="pageInfo">
+        <div class="container">
+            <h1> متجرى </h1>
+            <div class="bradCrumbBox"> 
+                <i class="fas fa-home"></i>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
+                    <li class="breadcrumb-item active" aria-current="page">  متجرى </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store Page  -->
+    <div class="storePage storeSignUp secPadding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-lg-3">
+                    <div class="storeSide">
+                        <div class="storeSideHead">
+                            <div class="storeAvatar"> <img src="images/img-5.png" alt="img" class="img-fluid"></div>
+                            <div class="storeHeadInfo">
+                                <h2> اسم المتجر</h2>
+                                <h5> الرياض - السعودية </h5>
+                            </div>
+                        </div>
+                        <div class="storeList">
+                            <a href="store.html" class="active"> <img src="images/icon-paint.png" alt="icon"> <span> بيانات المتجر   </span> </a>
+                            <a href="store-products.html"> <img src="images/icon-window.png" alt="icon"> <span> المنتجات </span> </a>
+                            <a href="store-orders.html"> <img src="images/icon-boxx.png" alt="icon"> <span> الطلبات </span> </a>
+                            <a href="store-auctions.html"> <img src="images/icon-judje.png" alt="icon"> <span> مزايداتى </span> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-lg-9">
+                    <div class="formBox orderPageDetails">
+                        <h2> بيانات المتجر </h2>
+                        <div class="formBody">
+                            <div class="mainImage">
+                                <div class="uploadImageBox">
+                                    <div class="uploadImage hideUpload">
+                                        <input type="file"  accept="image/*">
+                                        <img src="images/uploadImage.png" alt="icon" class="img-fluid">
+                                    </div>
+                                    <div class="preview"> 
+                                        <img src="images/img-6.png" alt="img" class="img-fluid">
+                                        <span class="deleteImage"><i class="icofont-close-line"></i></span> 
+                                    </div>
+                                </div>
+                                <h4> الصورة الاساسية </h4>
+                            </div>
+                            <div class="field required">
+                                <label> إسم المتجر </label>
+                                <input type="text" class="form-control" placeholder="برجاء ادخال إسم المتجر">
+                            </div>
+                            <div class="field required">
+                                <label> القسم</label>
+                                <div class="customSelect">
+                                    <select class="form-control"> 
+                                        <option value="0"> القسم </option>
+                                        <option value="1"> القسم </option>
+                                        <option value="2"> القسم </option>
+                                        <option value="3"> القسم </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field required">
+                                <label> الدولة</label>
+                                <div class="customSelect">
+                                    <select class="form-control"> 
+                                        <option value="0"> الدولة </option>
+                                        <option value="1"> الدولة </option>
+                                        <option value="2"> الدولة </option>
+                                        <option value="3"> الدولة </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="field required">
+                                <label> عنوان الشارع / الحى </label>
+                                <input type="text" class="form-control" value="برجاء ادخال عنوان الشارع / الحى">
+                            </div>
+                            <div class="field required">
+                                <label> المدينة </label>
+                                <input type="text" class="form-control" value="برجاء ادخال المدينة">
+                            </div>
+                            <div class="field required">
+                                <label> الرمز البريدى </label>
+                                <input type="text" class="form-control" value="برجاء ادخال الرمز البريدى">
+                            </div>
+                            <div class="field required">
+                                <label> رقم الهوية </label>
+                                <input type="text" class="form-control" value="برجاء ادخال رقم الهوية">
+                            </div>
+                            <div class="field required">
+                                <label>   وصف المتجر</label>
+                                <textarea type="text" class="form-control">برجاء ادخال وصف المتجر</textarea>
+                            </div>
+                            <div class="otherImages">
+                                <h4> الصور الداخلية </h4>
+                                <div class="otherImagesBox">
+                                    <div class="uploadImageBox">
+                                        <div class="uploadImage hideUpload">
+                                            <input type="file"  accept="image/*">
+                                            <img src="images/uploadImage.png" alt="icon" class="img-fluid">
+                                        </div>
+                                        <div class="preview"> 
+                                            <img src="images/img-6.png" alt="img" class="img-fluid">
+                                            <span class="deleteImage"><i class="icofont-close-line"></i></span> 
+                                        </div>
+                                    </div>
+                                    <div class="uploadImageBox">
+                                        <div class="uploadImage hideUpload">
+                                            <input type="file"  accept="image/*">
+                                            <img src="images/uploadImage.png" alt="icon" class="img-fluid">
+                                        </div>
+                                        <div class="preview"> 
+                                            <img src="images/img-6.png" alt="img" class="img-fluid">
+                                            <span class="deleteImage"><i class="icofont-close-line"></i></span> 
+                                        </div>
+                                    </div>
+                                    <div class="uploadImageBox">
+                                        <div class="uploadImage hideUpload">
+                                            <input type="file"  accept="image/*">
+                                            <img src="images/uploadImage.png" alt="icon" class="img-fluid">
+                                        </div>
+                                        <div class="preview"> 
+                                            <img src="images/img-6.png" alt="img" class="img-fluid">
+                                            <span class="deleteImage"><i class="icofont-close-line"></i></span> 
+                                        </div>
+                                    </div>
+                                    <div class="uploadMore">
+                                        <span> <i class="icofont-plus"></i> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formBox orderPageDetails">
+                        <h2> روابط التواصل الاجتماعى </h2>
+                        <div class="formBody">  
+                            <div class="links">
+                                <div class="linkField">
+                                    <label> رابط تويتر </label>
+                                    <input type="text" placeholder="برجاء ادخال رابط تويتر">
+                                    <span> <i class="icofont-twitter"></i> </span>
+                                </div>
+                                <div class="linkField">
+                                    <label> رابط انستجرام </label>
+                                    <input type="text" placeholder="برجاء ادخال رابط انستجرام">
+                                    <span> <i class="icofont-instagram"></i> </span>
+                                </div>
+                                <div class="linkField">
+                                    <label> رابط الفيسبوك </label>
+                                    <input type="text" placeholder="برجاء ادخال رابط الفيسبوك">
+                                    <span> <i class="icofont-facebook"></i> </span>
+                                </div>
+                            </div>           
+                            <button type="submit" class="redBtn"> تأكيد  </button>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <section class="footer secPadding">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/footerLogo.png" alt="english" class="img-fluid" width="100%">
+                </a>
+            </div>
+
+            <!-- Footer Nav  -->
+            <div class="footerNav">
+                <ul>
+                    <li class="active"> <a href="index.html"> الرئيسية </a> </li>
+                    <li> <a href="elect.html"> الالكترونيات </a> </li>
+                    <li> <a href="cars.html"> سيارات  </a> </li>
+                    <li> <a href="#"> قطع غيار </a> </li>
+                    <li> <a href="#"> ملابس </a> </li>
+                    <li> <a href="#"> عروض شهرية </a> </li>
+                    <li> <a href="auctions.html"> مزادات </a> </li>
+                </ul> 
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footerInfo">
+                        <h3> حسابى </h3>
+                        <ul>
+                            <li> <a href="profile.html"> حسابى </a> </li>
+                            <li> <a href="favourite.html"> قائمة رغباتى  </a> </li>
+                            <li> <a href="cart.html"> سلة المشتريات   </a> </li>
+                            <li> <a href="pay.html"> دفع </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footerInfo">
+                        <h3> خدمة العملاء </h3>
+                        <ul>
+                            <li> <a href="auctions.html"> المزادات </a> </li>
+                            <li> <a href="policy.html">  الشروط والاحكام   </a> </li>
+                            <li> <a href="contact.html"> اتصل بنا  </a> </li>
+                            <li> <a href="about.html"> من نحن </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footerInfo">
+                        <h3> معلومات </h3>
+                        <ul>
+                            <li> <a href="store-signUp.html"> كيف اسجل كتاجر  </a> </li>
+                            <li> <a href="policy.html"> اتفاقية الاستخدام  </a> </li>
+                            <li> <a href="faq.html">  الاسئلة المتكرره </a> </li>
+                            <li> <a href="map.html"> خريطة الموقع </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="footerInfo">
+                        <h3> معلومات التواصل </h3>
+                        <ul>
+                            <li> <p> الرياض .المملكه العربية السعودية  </p> </li>
+                            <li> <a href="tel:+966549782553"> +966549782553  </a> </li>
+                            <li> <a href="mailto:mail@company.com"> mail@company.com </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Policy  -->
+                <div class="col-12">               
+                    <div class="privacy">
+                        <div class="row">
+                            <div class="col-12 col-sm-4">
+                                <p> جميع الحقوق محفوظة لموقع اى-بيد </p>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <img src="images/payIcons.png" alt="logo" class="img-fluid">
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <img src="images/kian.png" alt="logo" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="plugins/jqueryUi/jquery-ui.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

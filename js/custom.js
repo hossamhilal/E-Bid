@@ -255,6 +255,34 @@
         $('#activeSlid img').attr('src', ActiveSrc);
     });
 
+    // Auction Images OWL 
+    $('.owlAuctionImages').owlCarousel({
+        rtl: true ,
+        margin: 30,
+        autoplay: false,
+        loop: true,
+        nav: false,
+        dots: false,
+        autoplaySpeed : 1000,
+        autoplayTimeout : 1000,
+        smartSpeed: 1000 ,
+        navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
+        responsive: {
+            0: {
+                items: 1,
+                stagePadding:30
+            },
+            600: {
+                items: 1,
+                stagePadding:60
+            },
+            1000: {
+                items: 1,
+                stagePadding:150
+            }
+        }
+    });
+
     // Tabs List
     $('.tabBtn').on('click' , function(e){
         e.preventDefault();
@@ -299,8 +327,74 @@
         $(this).parents('tr').remove();
     });
 
-    
+    // Upload Avatar 
+    function uploadAvatar(input , place) {
+        if (input.files && input.files[0]) {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                let preview = place ,
+                    newSrc = e.target.result ,
+                    deleteBtn = '<span class="deleteImage"><i class="icofont-close-line"></i></span>';
+                $(preview).text('');
+                $(input).parent().hide();
+                $(preview).append('<img class="img-fluid" src="'+ newSrc + '">');
+                $(preview).append(deleteBtn);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $(document).on('click', '.uploadImage input' ,function() {
+        $(this).on('change', function(){
+            uploadAvatar(this , $(this).parent().next('.preview'));
+        })
+    });
 
+    // Delete Image 
+    $(document).on('click', '.uploadImageBox .deleteImage' ,function() {
+        $(this).parent().prev('.uploadImage').css('display', 'flex');
+        $(this).parent().prev('.uploadImage').removeClass('hideUpload');
+        $(this).parent().text('');
+    });
+    
+    // Add New Image Box
+    $('.uploadMore').on('click' , function(){
+        let uploadBox = 
+            '<div class="uploadImageBox">' +
+                '<div class="uploadImage">' +
+                    '<input type="file" accept="image/*">' +
+                    '<img src="images/uploadImage.png" alt="icon" class="img-fluid">' +
+                '</div>' +
+                '<div class="preview"></div>' +
+            '</div>';
+        $(uploadBox).insertBefore(this);
+    });
+
+    // Table Toggle 
+    $('.tableToggle').on('click' , function(e){
+        e.stopPropagation();
+        $(this).toggleClass('open');
+        $('.tableList').removeClass('show');
+        $(this).next('.tableList').toggleClass('show');
+    });
+
+    // Remove Table menu 
+    $(document).on('click' , function(){
+        $('.tableToggle').removeClass('open');
+        $('.tableList').removeClass('show');
+    });
+
+    // Stop menu 
+    $('.tableList').on('click', function(e){
+        $('.tableList').removeClass('show');
+    });
+
+    // Delete Store Row  
+    $('.storeDeleteProduct').on('click', function(e){
+        e.preventDefault();
+        $(this).parents('tr').remove();
+    });
+    
+    
 
 
     // Range Slider 

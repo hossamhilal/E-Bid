@@ -2762,7 +2762,7 @@ section {
     color: #707070;
     font-size: 18px;
     line-height: 34px;
-    margin: 0 0 0 15px;
+    margin-inline-end: 15px;
     font-weight: 500;
 }
 
@@ -2999,6 +2999,7 @@ section {
     color: #484848;
     font-size: 26px;
     line-height: 40px;
+    margin-bottom: 15px;
 }
 
 .modalActions {
@@ -3073,6 +3074,10 @@ section {
         width: 40px;
         min-width: 40px;
         padding: 0;
+    }
+
+    .tabBtn::after {
+        height: 2px;
     }
 }
 
@@ -3155,7 +3160,7 @@ section {
     }
 
     .tabBtn {
-        font-size: 15px;
+        font-size: 14px;
         padding: 0 10px 5px;
     }
 
@@ -4154,6 +4159,7 @@ section {
 
     .orderPageDetails h2::after {
         width: 130px;
+        height: 2px;
     }
 
     .orderDetailsList label,
@@ -4417,39 +4423,1346 @@ section {
     color: #444444;
 }
 
-@media screen and (max-width:575px) {
+.auctionCounter {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E8E8;
+    border-radius: 14px 0px 14px 14px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.timeBlock {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.timeBlock h3 {
+    color: #A1A1A1;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0 0 0;
+}
+
+.timeBlock span {
+    background: #5582C1 0% 0% no-repeat padding-box;
+    border-radius: 9px;
+    width: 55px;
+    height: 74px;
+    display: inline-flex;
+    color: #fff;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6px;
+}
+
+.timeBlockNumbers {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.auctionTabs {
+    padding: 25px 0 0;
+    margin: 0 auto 30px;
+    max-width: 100%;
+}
+
+.auctionOfferUser h3 {
+    color: #444444;
+}
+
+.auctionOfferUser h5 {
+    color: #707070;
+}
+
+.placeBide {
+    text-align: initial;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E8E8E8;
+    border-radius: 14px 0px 14px 14px;
+    padding: 25px;
+}
+
+.placeBide h2 {
+    color: #6B6B6B;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.placeBidForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+.placeBidForm input {
+    height: 55px;
+    background: #FAFAFA;
+    border: 0;
+    padding: 0 20px;
+    width: 82%;
+    border-radius: 5px;
+}
+
+.placeBidForm input:focus,
+.placeBidForm input:active {
+    box-shadow: 0 0 0 0.2rem rgb(255, 7, 7, 0.2);
+    outline: 0;
+}
+
+.placeBidForm .redBtn {
+    border-radius: 5px;
+    height: 55px;
+    border: 0;
+    width: 16%;
+}
+
+.auctionDetailsTab .orderPageDetails {
+    border: 0;
+    border-radius: 0 0 14px 14px;
+}
+
+.auctionDetailsTab li {
+    margin: 0;
+    padding: 0;
+}
+
+.auctionDetailsTab li::before {
+    display: none;
+}
+
+.auctionSlider {
+    margin-bottom: 50px;
+}
+
+.auctionSlider img {
+    border-radius: 29px;
+}
+
+.auctionPageDetails {
+    margin-bottom: 50px;
+}
+
+.auctionPageDetails .orderPageDetails {
+    border-radius: 14px 0px 14px 14px;
+}
+
+.auctionPageDetails h2 {
+    padding: 11px 20px 5px 20px;
+}
+
+.auctionDetailsBox {
+    padding: 20px;
+    color: #484848;
+    font-size: 18px;
+}
+
+.auctionDetailsBox p {
+    line-height: 31px;
+}
+
+@media screen and (max-width:767px) {
     .profileAuction .orderIcon {
         width: 70px;
         height: 70px;
     }
+
+    .auctionCounter {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .timeBlock {
+        padding: 0 6px;
+    }
+
+    .timeBlock h3 {
+        font-size: 13px;
+    }
+
+    .timeBlock span {
+        width: 25px;
+        height: 35px;
+        font-size: 16px;
+        margin: 0 2px;
+        border-radius: 5px;
+    }
+
+    .timeBlock h3 {
+        margin: 10px 0 0 0;
+    }
+
+    .auctionTabs {
+        padding: 10px 0 0;
+        margin-bottom: 15px;
+    }
+
+    .auctionRecentOffer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        border-top: 1px solid #d4d4d4;
+    }
+
+    .auctionRecentOffer:nth-child(odd) {
+        background: #FCFCFC;
+    }
+
+    .auctionRecentOffer .index {
+        width: 40px;
+    }
+
+    .auctionRecentOffer span {
+        width: 30px;
+        height: 30px;
+        background: #220081;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        border-radius: 5px;
+        margin-inline-end: 10px;
+    }
+
+    .auctionOfferUser {
+        width: calc(100% - 40px);
+    }
+
+    .auctionOfferUser>* {
+        font-size: 13px;
+    }
+
+    .auctionOfferDate {
+        width: calc(100% - 40px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-inline-start: auto;
+    }
+
+    .auctionOfferDate p {
+        margin: 0;
+    }
+
+    .placeBide {
+        padding: 12px;
+    }
+
+    .placeBidForm input {
+        height: 45px;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .placeBidForm .redBtn {
+        height: 45px;
+        font-size: 12px;
+        width: 50px;
+    }
+
+    .auctionSlider {
+        margin-bottom: 25px;
+    }
+
+    .auctionSlider img {
+        border-radius: 10px;
+    }
+
+    .auctionPageDetails h2 {
+        padding: 5px 12px 5px;
+    }
+
+    .auctionDetailsBox {
+        padding: 0 10px 10px;
+    }
+
+    .auctionDetailsBox p {
+        font-size: 13px;
+        line-height: 23px;
+        margin-bottom: 5px;
+    }
 }
 
 @media screen and (max-width:768px) {
-    .profileAuction .orderInfo > * , 
+
+    .profileAuction .orderInfo>*,
     .profileAuction .orderInfo label {
         margin: 0;
     }
 }
 
+@media (min-width:768px) {
+    .auctionRecentOffer {
+        display: flex;
+        align-items: center;
+        text-align: initial;
+        padding: 10px 15px;
+        border-top: 1px solid #EEEEEE;
+    }
+
+    .auctionRecentOffer:nth-child(odd) {
+        background: #FCFCFC
+    }
+
+    .auctionRecentOffer .index {
+        width: 10%;
+    }
+
+    .auctionRecentOffer span {
+        width: 37px;
+        height: 37px;
+        background: #002A64;
+        border-radius: 8px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .auctionOfferUser {
+        width: 50%;
+        display: flex;
+    }
+
+    .auctionOfferDate {
+        width: 40%;
+        display: flex;
+    }
+
+    .auctionOfferUser>* {
+        width: 50%;
+        margin: 0;
+        font-size: 17px;
+    }
+
+    .auctionOfferDate>p {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+@media (min-width:1024px) {
+    .auctionRecentOffer {
+        padding: 10px 25px;
+    }
+
+    .auctionRecentOffer .index {
+        width: 5%;
+    }
+
+    .auctionOfferUser {
+        width: 65%;
+    }
+
+    .auctionOfferDate {
+        width: 30%;
+    }
+}
+
 
 /*==========================||---------------------------||========================*/
-/*==========================||             Header        ||========================*/
+/*==========================||        Store Sign Up      ||========================*/
 /*==========================||---------------------------||========================*/
 
+.storeSignUp .formBox {
+    max-width: 950px;
+    padding: 10px 15px 20px;
+}
 
-@media screen and (max-width:768px) {}
+.storeSignUp h2 {
+    padding: 0;
+}
+
+.storeSignUp h2::after {
+    right: 0;
+}
+
+.storeSignUp .formBody {
+    padding: 40px 6%;
+}
+
+.mainImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.uploadImageBox {
+    width: 126px;
+    height: 114px;
+    border: 1px dashed #A1A1A1;
+    border-radius: 7px;
+    background: #f9f9f9;
+    cursor: pointer;
+    position: relative;
+}
+
+.uploadImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: inherit;
+    cursor: pointer;
+}
+
+.uploadImage input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.uploadImage label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uploadImageBox:hover {
+    border-color: #ED1B24;
+}
+
+.uploadImage:hover {
+    background: rgba(237, 27, 36, .15);
+}
+
+.uploadImage:hover img {
+    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+.uploadImageBox .preview {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.uploadImageBox .preview img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.uploadImageBox .deleteImage {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    background: #ED1B24;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.storeSignUp h4 {
+    color: #A1A1A1;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.mainImage .uploadImageBox {
+    margin: 0 auto 10px;
+}
+
+.otherImages {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.otherImagesBox {
+    display: flex;
+    max-width: 565px;
+    flex-wrap: wrap;
+    padding: 15px 0 0 0;
+    margin: auto;
+}
+
+.otherImagesBox .uploadImageBox {
+    margin-inline-end: 15px;
+    margin-bottom: 15px;
+}
+
+.uploadMore {
+    width: 126px;
+    height: 114px;
+    border: 1px dashed #ED1B24;
+    border-radius: 7px;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.uploadMore span {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #ED1B24;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ED1B24;
+}
+
+.uploadMore:hover {
+    background: #ED1B24;
+}
+
+.uploadMore:hover span {
+    color: #fff;
+    border-color: #fff;
+}
+
+
+.linkField {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.linkField label {
+    color: #6B6B6B;
+    font-size: 15px;
+    line-height: 31px;
+    display: block;
+    font-weight: 500;
+}
+
+.linkField input {
+    background: #FAFAFA;
+    border-radius: 5px;
+    height: 55px;
+    width: 100%;
+    border: 0;
+    padding: 0 15px;
+    padding-inline-start: 60px;
+    font-size: 14px;
+}
+
+.linkField span {
+    width: 50px;
+    height: 55px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 3px solid #FAFAFA;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e9e9e9;
+    font-size: 23px;
+}
+
+.linkField input::placeholder {
+    color: #BFBFBF;
+}
+
+.storeSignUp .redBtn {
+    margin: 30px 0 0 0;
+}
+
+.hideUpload {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .storeSignUp .formBox {
+        padding: 0 12px;
+    }
+
+    .storeSignUp .formBody {
+        padding: 25px 0 15px;
+    }
+
+    .mainImage {
+        padding-bottom: 0;
+    }
+
+    .mainImage .uploadImageBox {
+        margin-bottom: 5px;
+    }
+
+    .uploadMore,
+    .uploadImageBox {
+        width: 80px;
+        height: 80px;
+    }
+
+    .uploadImage img {
+        max-width: 35px;
+    }
+
+    .storeSignUp h4 {
+        font-size: 13px;
+    }
+
+    .otherImagesBox {
+        padding: 0;
+    }
+
+    .linkField {
+        margin-bottom: 10px;
+    }
+
+    .linkField label {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .linkField input {
+        height: 45px;
+        font-size: 12px;
+        padding-inline-start: 45px;
+    }
+
+    .linkField span {
+        height: 45px;
+        width: 40px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .otherImagesBox .uploadImageBox {
+        margin-inline-end: 8px;
+        margin-bottom: 8px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .uploadMore {
+        width: 60px;
+        height: 60px;
+    }
+
+    .uploadMore span {
+        width: 25px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .otherImages {
+        padding-bottom: 0;
+    }
+
+    .otherImagesBox .uploadImage img {
+        max-width: 25px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .otherImagesBox {
+        max-width: 365px;
+    }
+}
 
 /*==========================||---------------------------||========================*/
-/*==========================||             Header        ||========================*/
+/*==========================||      Profile Store        ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.storePage .formBox {
+    max-width: 100%;
+    margin: 0;
+    margin: 0 0 20px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.storePage .formBody {
+    padding: 0 5% 15px;
+}
+
+.storePage .formBox h2 {
+    padding: 0;
+}
+
+.storePage .formBox h2::after {
+    right: 0;
+}
+
+.storeSide {
+    background: #002A64 0% 0% no-repeat padding-box;
+    border-radius: 9px;
+    padding: 20px 15px;
+    color: #fff;
+}
+
+.storeSideHead {
+    display: flex;
+    align-items: center;
+    text-align: initial;
+    margin-bottom: 20px;
+}
+
+.storeAvatar {
+    width: 74px;
+    height: 74px;
+    border: 4px solid #043982;
+    border-radius: 50%;
+    margin-inline-end: 10px;
+}
+
+.storeAvatar img {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.storeSideHead h2 {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.storeSideHead h5 {
+    font-size: 10px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.storeList a {
+    display: flex;
+    align-items: center;
+    padding: 13px 15px;
+    color: inherit;
+    position: relative;
+    transition: all .3s ease-in-out;
+    border-radius: 2px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.storeList img {
+    margin-inline-end: 15px;
+}
+
+.storeList a::after {
+    content: '';
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-inline-start: auto;
+}
+
+.storeList a.active,
+.storeList a:hover {
+    background: #ED1B24;
+    color: #fff;
+}
+
+.storePage .mainImage .uploadImageBox {
+    border: 4px solid #E3E3E3;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+}
+
+@media screen and (max-width:575px) {
+    .storePage .formBox {
+        margin: 20px 0;
+    }
+
+    .storePage .formBox h2 {
+        margin-bottom: 20px;
+    }
+
+    .storePage .formBox {
+        padding: 15px 10px;
+    }
+
+    .storePage .formBody {
+        padding: 0;
+    }
+
+    .storeSide {
+        padding: 15px;
+    }
+
+    .storeSideHead {
+        margin-bottom: 10px;
+    }
+
+    .storeAvatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .storeSideHead h2 {
+        font-size: 12px;
+    }
+
+    .storeList a {
+        font-size: 12px;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+
+    .storePage .formBox {
+        padding-top: 0;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:992px) {
+    .storePage .formBox h2 {
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .storePage .formBody {
+        padding: 0;
+    }
+
+    .storeList a {
+        font-size: 13px;
+    }
+}
 
 /*==========================||---------------------------||========================*/
-/*==========================||             Header        ||========================*/
+/*==========================||       Store Products      ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.storeTableFilter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.storeFilter {
+    display: flex;
+    align-items: center;
+}
+
+.storeFilter label {
+    color: #535455;
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-inline-end: 10px;
+    font-weight: 600;
+}
+
+.storeFilter select,
+.storeFilter .customSelect select.form-control:not([size]):not([multiple]) {
+    min-width: 80px;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.storeFilter .customSelect::after {
+    top: 17px;
+    left: 11px;
+    width: 6px;
+    height: 6px;
+}
+
+.storeSearch {
+    position: relative;
+    width: 266px;
+}
+
+.storeFilter .form-control {
+    border: 0;
+    height: 40px;
+    border-radius: 5px;
+    background: #F9F9F9;
+    font-size: 13px;
+    color: #9F9F9F;
+}
+
+.storeFilter .form-control:focus,
+.storeFilter .form-control:active {
+    box-shadow: 0 0 0 0.2rem rgb(255, 7, 7, 0.2);
+}
+
+.storeSearch .searchBtn {
+    position: absolute;
+    background: transparent;
+    left: 5px;
+    border: 0;
+    color: #9F9F9F;
+    font-size: 13px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.storeSearch .searchBtn:hover {
+    color: #ED1B24;
+}
+
+.storeFilter:nth-child(3) select,
+.storeFilter:nth-child(3) .customSelect select.form-control:not([size]):not([multiple]) {
+    min-width: 110px;
+}
+
+.storeFilter .redBtn {
+    height: 40px;
+    border-radius: 7px;
+    font-size: 13px;
+    width: 135px;
+    margin: 0;
+}
+
+.storeFilter .redBtn span {
+    margin-inline-start: 10px;
+}
+
+.storeFilter .redBtn i {
+    font-size: 10px;
+}
+
+.storeFilter .redBtn:hover {
+    color: #fff;
+}
+
+.storeTable .table thead {
+    background: #002A64;
+    color: #fff;
+}
+
+.storeTable .table th {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.storeTable .table tr {
+    border: 1px solid #F2F2F2;
+    border-top: 0;
+}
+
+.storeTable .table td {
+    color: #9F9F9F;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+.storeTable .table img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.storeTable .table td:first-of-type {
+    text-align: center;
+}
+
+.tableAction {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tableToggle {
+    width: 40px;
+    height: 40px;
+    background: #F9F9F9;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.tableToggle span {
+    width: 14px;
+    height: 1px;
+    background: #9F9F9F;
+    margin-bottom: 4px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.tableToggle span:nth-child(2) {
+    width: 11px;
+}
+
+.tableToggle span:nth-child(3) {
+    width: 9px;
+}
+
+.tableToggle:hover,
+.tableToggle:focus {
+    background: #ED1B24;
+}
+
+.tableToggle:hover span,
+.tableToggle:focus span {
+    background: #fff;
+}
+
+.tableList {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 87px;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 0px 5px 5px 5px;
+    z-index: 1;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    margin-top: -5px;
+    transform: translateY(15px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.tableList>* {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    color: #535455;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.tableList>*:last-of-type {
+    border: 0;
+}
+
+.tableList>*:hover {
+    background: #ED1B24;
+    color: #fff;
+}
+
+.tableToggle.open span:first-of-type {
+    transform: rotate(45deg) translate(3px, 3px);
+}
+
+.tableToggle.open span:nth-child(2) {
+    display: none;
+    margin: 0;
+}
+
+.tableToggle.open span:last-of-type {
+    transform: rotate(-45deg) translate(0px, -1px);
+    width: 100%;
+}
+
+.tableList.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.tableFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #535455;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.dataTables_paginate a {
+    width: 26px;
+    height: 26px;
+    font-size: 13px;
+    margin: 0 2px;
+}
+
+.pagination a:first-of-type,
+.pagination a:last-of-type {
+    border-radius: 4px;
+    background: #F7F8F9;
+    border: 0;
+}
+
+.pagination a:first-of-type:hover,
+.pagination a:last-of-type:hover {
+    background: #ED1B24;
+    color: #fff;
+}
+
+.storeOrdersTabs {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EEEEEE;
+    border-radius: 9px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.storeOrdersTabs .tabsList {
+    border: 0;
+    margin: 0;
+    text-align: initial;
+}
+
+.storeOrdersTabs .tabBtn {
+    font-size: 14px;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    border-radius: 9px;
+    color: #585858;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    margin-inline-end: 20px;
+    min-width: 23%;
+}
+
+.storeOrdersTabs .tabBtn.active,
+.storeOrdersTabs .tabBtn:hover {
+    background: #DA001A;
+    color: #fff;
+}
+
+.storeOrdersTabs .tabBtn.active::after,
+.storeOrdersTabs .tabBtn:hover::after {
+    display: none;
+}
+
+.storeOrderPage .storeTableFilter {
+    justify-content: flex-start;
+}
+
+.storeOrderPage .storeFilter {
+    margin-inline-end: 30px;
+}
+
+.storeTable .greyBtn {
+    height: 40px;
+    background: #F9F9F9;
+    border-radius: 7px;
+    font-size: 14px;
+    width: 60px;
+}
+
+.storeTable .greyBtn:hover {
+    background: #DA001A;
+    color: #fff;
+}
+
+@media screen and (max-width:575px) {
+    .storeFilter {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .storeFilter {
+        margin: 5px 0;
+    }
+
+    .storeFilter label {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    .storeSearch {
+        width: 100%;
+    }
+
+    .storeOrderPage .storeFilter {
+        margin-inline-end: 0;
+    }
+
+    .storeFilter:first-of-type {
+        order: 1;
+    }
+
+    .storeFilter:nth-child(2) {
+        order: 3;
+    }
+
+    .storeFilter:nth-child(3) {
+        order: 2;
+    }
+
+    .storeFilter:nth-child(4) {
+        order: 4;
+        width: 100%;
+    }
+
+    .storeFilter .redBtn {
+        width: 100%;
+    }
+
+    .storeTableBox {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .storeTableBox::-webkit-scrollbar {
+        display: none;
+    }
+
+    .storeTable .table th,
+    .storeTable .table td {
+        font-size: 10px;
+        padding: 5px;
+        white-space: nowrap;
+    }
+
+    .storeTable .table img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .tableToggle {
+        width: 25px;
+        height: 25px;
+        padding: 6px;
+    }
+
+    .tableToggle span:last-of-type {
+        margin: 0;
+    }
+
+    .tableFooter {
+        flex-wrap: wrap;
+    }
+
+    .dataTables_info {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .dataTables_paginate a {
+        font-size: 12px;
+    }
+
+    .dataTables_paginate {
+        margin-inline-start: auto;
+    }
+
+    .storeOrderPage .storeTableFilter {
+        justify-content: space-between;
+    }
+
+    .storeOrdersTabs {
+        padding: 10px;
+        margin: 15px 0 0 0;
+    }
+
+    .storeOrdersTabs .tabBtn {
+        font-size: 10px;
+        padding: 2px 10px;
+        margin-inline-end: 6px
+    }
+    
+    .storeTable .greyBtn {
+        font-size: 12px;
+        width: 45px;
+        height: 35px;
+        padding: 5px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .storeFilter {
+        margin-bottom: 10px;
+    }
+
+    .storeTableFilter {
+        margin-bottom: 0;
+    }
+
+    .storeTable .table th,
+    .storeTable .table td {
+        font-size: 10px;
+        padding: 5px;
+        white-space: nowrap;
+    }
+
+    .storeTable .table img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .tableToggle {
+        width: 25px;
+        height: 25px;
+        padding: 6px;
+    }
+
+    .tableToggle span:last-of-type {
+        margin: 0;
+    }
+
+
+    .storePage .row {
+        margin: 0 -5px;
+    }
+
+    .storePage .formBox h2 {
+        font-size: 15px;
+    }
+
+    .storeFilter label {
+        font-size: 11px;
+    }
+
+    .dataTables_info {
+        font-size: 12px;
+    }
+
+    .dataTables_paginate a {
+        font-size: 12px;
+    }
+
+    .storePage .col-12 {
+        padding: 0 5px;
+    }
+
+    .storeOrdersTabs .tabBtn {
+        font-size: 11px;
+        padding: 2px 15px;
+        margin-inline-end: 9px;
+    }
+    
+    .storeOrdersTabs {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .storeOrderPage .storeFilter {
+        margin-inline-end: 15px;
+    }
+    
+    .storeTable .greyBtn {
+        font-size: 11px;
+        width: 50px;
+        height: 35px;
+        padding: 5px;
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||             Header        ||========================*/
@@ -4625,6 +5938,74 @@ section {
     left: 0;
 }
 
+.en .storeList a::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.en .linkField span {
+    right: auto;
+    left: 0;
+}
+
+.en .uploadImageBox .deleteImage {
+    right: auto;
+    left: 4px;
+}
+
+.en .storeSignUp h2::after {
+    right: auto;
+    left: 0;
+}
+
+.en .timeBlockNumbers {
+    flex-direction: row;
+}
+
+.en .orderDetailsList label {
+    border-left: 0;
+    border-right: 1px solid #EEEEEE;
+}
+
+.en .orderPageDetails h2::after {
+    left: 12px;
+    right: auto;
+}
+
+.en .fieldIcon span {
+    left: auto;
+    right: 0;
+}
+
+.en .addressHeader .radiobox label::after {
+    right: auto;
+    left: 0;
+}
+
+.en .storeOrderPage h2::after {
+    left: 0;
+}
+
+.en .customSelect::after {
+    right: 15px;
+    left: auto;
+}
+
+.en .storeFilter .customSelect::after {
+    right: 11px;
+    left: auto;
+}
+
+.en .pagination a:first-of-type, 
+.en .pagination a:last-of-type {
+    transform: rotate(180deg);
+}
+
+.en .storeSearch .searchBtn {
+    right: 5px;
+    left: auto;
+}
+
 @media screen and (max-width: 575px) {
     .en .headerFilter .redBtn {
         left: auto;
@@ -4655,5 +6036,12 @@ section {
 
     .en .headerNav.show {
         transform: translateX(0);
+    }
+}
+
+@media (min-width:768px) {
+    .en .orderTotal {
+        border-right: 0;
+        border-left: 3px solid #D4D4D4;
     }
 }
