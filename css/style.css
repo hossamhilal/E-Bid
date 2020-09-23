@@ -569,6 +569,17 @@ section {
     transition: all .4s ease-in-out;
 }
 
+@keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+} 
+
 @media screen and (max-width:768px) {
     .headerTopUser>* {
         padding: 10px 5px;
@@ -719,6 +730,45 @@ section {
         width: 40px;
         height: 40px;
         top: calc(50% - 20px);
+    }
+
+    .headerNav li{
+        transition: all .4s ease-in-out;
+    }
+    
+    .headerNav.show li:first-of-type {
+        animation: fadeInDown .3s linear both .5s;
+        -webkit-animation: fadeInDown .3s linear both .5s;
+    }
+    
+    .headerNav.show li:nth-of-type(2) {
+        animation: fadeInDown .3s linear both .7s;
+        -webkit-animation: fadeInDown .3s linear both .7s;
+    }
+    
+    .headerNav.show li:nth-of-type(3) {
+        animation: fadeInDown .3s linear both .9s;
+        -webkit-animation: fadeInDown .3s linear both .9s;
+    }
+    
+    .headerNav.show li:nth-of-type(4) {
+        animation: fadeInDown .3s linear both 1.1s;
+        -webkit-animation: fadeInDown .3s linear both 1.1s;
+    }
+    
+    .headerNav.show li:nth-of-type(5) {
+        animation: fadeInDown .3s linear both 1.3s;
+        -webkit-animation: fadeInDown .3s linear both 1.3s;
+    }
+    
+    .headerNav.show li:nth-of-type(6) {
+        animation: fadeInDown .3s linear both 1.5s;
+        -webkit-animation: fadeInDown .3s linear both 1.5s;
+    }
+    
+    .headerNav.show li:nth-of-type(7) {
+        animation: fadeInDown .3s linear both 1.7s;
+        -webkit-animation: fadeInDown .3s linear both 1.7s;
     }
 }
 
@@ -5415,11 +5465,13 @@ section {
     width: 9px;
 }
 
+.tableToggle.open ,
 .tableToggle:hover,
 .tableToggle:focus {
     background: #ED1B24;
 }
 
+.tableToggle.open span ,
 .tableToggle:hover span,
 .tableToggle:focus span {
     background: #fff;
@@ -5498,15 +5550,15 @@ section {
     margin: 0 2px;
 }
 
-.pagination a:first-of-type,
-.pagination a:last-of-type {
+.dataTables_paginate .pagination a:first-of-type,
+.dataTables_paginate .pagination a:last-of-type {
     border-radius: 4px;
     background: #F7F8F9;
     border: 0;
 }
 
-.pagination a:first-of-type:hover,
-.pagination a:last-of-type:hover {
+.dataTables_paginate .pagination a:first-of-type:hover,
+.dataTables_paginate .pagination a:last-of-type:hover {
     background: #ED1B24;
     color: #fff;
 }
@@ -5568,6 +5620,105 @@ section {
 .storeTable .greyBtn:hover {
     background: #DA001A;
     color: #fff;
+}
+
+.storeOrderDetails .tableBox {
+    margin-bottom: 5px;
+}
+
+.storeOrderDetails .table {
+    margin: 0;
+}
+
+.storeOrderDetails .tableBox .table td,
+.storeOrderDetails .tableBox .table th {
+    padding: 20px 10px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.storeOrderDetails .orderDetailsList {
+    padding-inline-end: 3%;
+}
+
+.storeOrderDetails .orderDetailsList li:nth-child(odd) {
+    border-left: 1px solid #EEEEEE;
+}
+
+.storeOrderDetails .orderPageDetails {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.storeOrderDetails .orderPageDetails h2 {
+    padding-inline-start: 15px;
+}
+
+.storeOrderDetails .orderPageDetails h2::after {
+    right: 15px;
+}
+
+
+.storeOrderDetails .orderDetailsList label {
+    min-width: 200px;
+}
+
+.orderDetailsAction .redBtn {
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.storeAuctionPage .tabsList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.storeAuctionPage .tabBtn {
+    width: calc( 50% - 15px );
+    margin: 0;
+}
+
+.storeAuctionPage .storeTable .greyBtn {
+    width: auto;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.auctionModal {
+    padding: 0px 25px 20px;
+    text-align: initial;
+}
+
+.auctionModal h2 {
+    letter-spacing: 0.34px;
+    color: #ED1B24;
+    font-size: 20px;
+    line-height: 60px;
+    border-bottom: 1px solid #EEEEEE;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.auctionModal h2::after {
+    content: '';
+    background: #ED1B24;
+    width: 179px;
+    height: 4px;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    border-radius: 3px;
+}
+
+.auctionModal .redBtn {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    margin: 25px 0 0 0;
 }
 
 @media screen and (max-width:575px) {
@@ -5676,12 +5827,31 @@ section {
         padding: 2px 10px;
         margin-inline-end: 6px
     }
-    
+
     .storeTable .greyBtn {
         font-size: 12px;
         width: 45px;
         height: 35px;
         padding: 5px;
+    }
+    
+    .storeOrderDetails .orderDetailsList label {
+        min-width: 115px;
+    }
+
+    .orderDetailsAction .redBtn {
+        margin: 20px 0 0 0;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .storeAuctionPage .tabBtn {
+        width: auto;
+        padding: 3px 18px;
+    }
+
+    .auctionModal .redBtn {
+        margin: 25px 0 0 0;
     }
 }
 
@@ -5746,29 +5916,117 @@ section {
         padding: 2px 15px;
         margin-inline-end: 9px;
     }
-    
+
     .storeOrdersTabs {
         padding: 15px;
         margin-bottom: 10px;
     }
-    
+
     .storeOrderPage .storeFilter {
         margin-inline-end: 15px;
     }
-    
+
     .storeTable .greyBtn {
         font-size: 11px;
         width: 50px;
         height: 35px;
         padding: 5px;
     }
+
+    .storeOrderDetails .tableBox .table td, 
+    .storeOrderDetails .tableBox .table th {
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    .storeOrderDetails .orderDetailsList label {
+        font-size: 13px;
+        min-width: 150px;
+    }
+    
+    .storeOrderDetails .orderDetailsList span {
+        font-size: 13px;
+    }
+
+    .storeAuctionPage .storeTable .greyBtn {
+        font-size: 10px;
+    }
 }
 
 /*==========================||---------------------------||========================*/
-/*==========================||             Header        ||========================*/
+/*==========================||        Notifications     ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.notificationsPageBox {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px 10px 0px 0px;
+    padding: 25px;
+}
+
+.notification {
+    padding: 15px;
+    text-align: initial;
+    border-radius: 10px;
+    border: 1px solid #EBEBEB;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.notification .notificationIcon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(237, 27, 36, .15);
+    padding: 5PX;
+    margin-inline-end: 15px;
+}
+
+.notification h3 {
+    color: #535455;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.notification span {
+    color: #989898;
+    font-size: 14px;
+}
+
+@media screen and (max-width:575px) {
+    .notificationsPageBox {
+        padding: 10px;
+    }
+    
+    .notification {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .notificationBody {
+        width: calc( 100% - 50px);
+    }
+    
+    .notification .notificationIcon {
+        width: 40px;
+        height: 40px;
+        margin-inline-end: 10px;
+    }
+    
+    .notification .notificationIcon img {
+        max-width: 15px;
+    }
+    
+    .notification h3 {
+        font-size: 11px;
+        line-height: 18px;
+        margin: 0;
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||             Header        ||========================*/
@@ -5996,7 +6254,7 @@ section {
     left: auto;
 }
 
-.en .pagination a:first-of-type, 
+.en .pagination a:first-of-type,
 .en .pagination a:last-of-type {
     transform: rotate(180deg);
 }
@@ -6004,6 +6262,21 @@ section {
 .en .storeSearch .searchBtn {
     right: 5px;
     left: auto;
+}
+
+.en .storeOrderDetails .orderPageDetails h2::after {
+    right: auto;
+    left: 15px;
+}
+
+.en .storePage .formBox h2::after {
+    right: auto;
+    left: 0;
+}
+
+.en .auctionModal h2::after {
+    right: auto;
+    left: 0;
 }
 
 @media screen and (max-width: 575px) {

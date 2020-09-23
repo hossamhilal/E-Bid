@@ -129,43 +129,54 @@
     <!-- Page Info  -->
     <div class="pageInfo">
         <div class="container">
-            <h1> تغيير كلمة المرور  </h1>
+            <h1> الاشعارات </h1>
             <div class="bradCrumbBox"> 
                 <i class="fas fa-home"></i>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"> <a href="index.html"> الرئيسية </a> </li>
-                    <li class="breadcrumb-item"> <a href="profile.html">  الملف الشخصى   </a> </li>
-                    <li class="breadcrumb-item active" aria-current="page"> تغيير كلمة المرور </li>
+                    <li class="breadcrumb-item active" aria-current="page"> الاشعارات </li>
                 </ol>
             </div>
         </div>
     </div>
 
-    <!-- Addresses Page  -->
-    <div class="profilePage secPadding">
+     <!-- Notifications Page  -->
+    <div class="notificationsPage secPadding">
         <div class="container">
-            <div class="addressForm">
-                <div class="cartBox payForm">
-                    <h3> تغيير كلمة المرور </h3>
-                    <div class="payFormBox">
-                        <form action="">
-                            <div class="field required fieldIcon">
-                                <label> كلمة المرور القديمة  </label>
-                                <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور">
-                                <span class="showPassword"> <i class="far fa-eye"></i> </span>
-                            </div>
-                            <div class="field required fieldIcon">
-                                <label> كلمة المرور الجديدة </label>
-                                <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور الجديدة">
-                                <span class="showPassword"> <i class="far fa-eye"></i> </span>
-                            </div>
-                            <div class="field required fieldIcon">
-                                <label> تأكيد كلمة المرور الجديدة </label>
-                                <input type="password" class="form-control" placeholder="برجاء ادخال كلمة المرور الجديدة">
-                                <span class="showPassword"> <i class="far fa-eye"></i> </span>
-                            </div>
-                            <button  type="submit" class="redBtn"> حفظ التعديل </button>
-                        </form>
+            <div class="notificationsPageBox">
+                <div class="notification">
+                    <div class="notificationIcon"> <img src="images/icon-bell.png" alt="icon" class="img-fluid"> </div>
+                    <div class="notificationBody">
+                        <h3> هذا النص هو مثال لنص يمكن أن يستبدل بنص اخر في نفس المساحة </h3>
+                        <span> Jun 2,2020</span>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notificationIcon"> <img src="images/icon-bell.png" alt="icon" class="img-fluid"> </div>
+                    <div class="notificationBody">
+                        <h3> هذا النص هو مثال لنص يمكن أن يستبدل بنص اخر في نفس المساحة </h3>
+                        <span> Jun 2,2020</span>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notificationIcon"> <img src="images/icon-bell.png" alt="icon" class="img-fluid"> </div>
+                    <div class="notificationBody">
+                        <h3> هذا النص هو مثال لنص يمكن أن يستبدل بنص اخر في نفس المساحة </h3>
+                        <span> Jun 2,2020</span>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notificationIcon"> <img src="images/icon-bell.png" alt="icon" class="img-fluid"> </div>
+                    <div class="notificationBody">
+                        <h3> هذا النص هو مثال لنص يمكن أن يستبدل بنص اخر في نفس المساحة </h3>
+                        <span> Jun 2,2020</span>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notificationIcon"> <img src="images/icon-bell.png" alt="icon" class="img-fluid"> </div>
+                    <div class="notificationBody">
+                        <h3> هذا النص هو مثال لنص يمكن أن يستبدل بنص اخر في نفس المساحة </h3>
+                        <span> Jun 2,2020</span>
                     </div>
                 </div>
             </div>
@@ -257,6 +268,22 @@
             </div>
         </div>
     </section>
+
+    <!-- Favourite Modal -->
+    <div class="modal fade" id="favModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="favModalContent">
+                    <div class="successIcon"> <i class="icofont-check-alt"></i> </div>
+                    <h2> تم إضافة المنتج في سلة التسوق بنجاح</h2>
+                    <div class="modalActions">
+                        <a href="#" class="greyBtn" data-dismiss="modal"> تكملة التسوق </a>
+                        <a href="cart.html" class="greyBtn"> اعرض السلة </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- JS -->
     <script src="js/jquery-3.2.1.min.js"></script>

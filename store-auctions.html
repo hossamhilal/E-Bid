@@ -141,7 +141,7 @@
     </div>
 
     <!-- Store Page  -->
-    <div class="storePage storeOrderPage storeSignUp secPadding">
+    <div class="storePage storeAuctionPage secPadding">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-4 col-lg-3">
@@ -164,15 +164,14 @@
                 <div class="col-12 col-sm-8 col-lg-9">
                     <div class="storeOrdersTabs">
                         <div class="tabsList">
-                            <a href="#tab1" class="tabBtn active"> طلبات جديدة </a>
-                            <a href="#tab2" class="tabBtn"> طلبات نشطة </a>
-                            <a href="#tab3" class="tabBtn"> طلبات منتهية </a>
+                            <a href="#tab1" class="tabBtn active"> جميع المنتجات </a>
+                            <a href="#tab2" class="tabBtn"> المنتجات المضافة للمزاد </a>
                         </div>                        
                     </div>
                     <div class="tabsContent">
                         <div class="tabContent show" id="tab1">
                             <div class="formBox orderPageDetails">
-                                <h2> الطلبات الجديدة </h2>
+                                <h2> المنتجات </h2>
                                 <div class="storeTable">
                                     <div class="storeTableFilter">
                                         <div class="storeFilter"> 
@@ -201,85 +200,99 @@
                                                 </select>
                                             </div>
                                         </div>
+                                        <div class="storeFilter"> 
+                                            <a href="#" class="redBtn"> <i class="icofont-plus"></i> <span>  إضافة مزاد </span> </a>
+                                        </div>
                                     </div>
                                     <div class="storeTableBox">                       
                                         <table class="table">
                                             <thead>
                                                 <tr>
                                                     <th scope="col"> </th>
-                                                    <th scope="col">رقم الطلب</th>
-                                                    <th scope="col"> اسم العميل </th>
+                                                    <th scope="col">الصورة</th>
+                                                    <th scope="col"> اسم المنتج </th>
                                                     <th scope="col"> السعر </th>
-                                                    <th scope="col"> السعر </th>
-                                                    <th scope="col"> الدفع </th>
+                                                    <th scope="col"> الكمية </th>
+                                                    <th scope="col"> وصف </th>
                                                     <th scope="col"> </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td> 1 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-new-details.html" class="greyBtn"> عرض  </a>
+                                                        <a href="#" type="button" class="greyBtn"  data-toggle="modal" data-target="#auctionModal"> إضافة للمزاد</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 2 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-new-details.html" class="greyBtn"> عرض  </a>
+                                                        <a href="#" type="button" class="greyBtn"  data-toggle="modal" data-target="#auctionModal"> إضافة للمزاد</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 3 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-new-details.html" class="greyBtn"> عرض  </a>
+                                                        <a href="#" type="button" class="greyBtn"  data-toggle="modal" data-target="#auctionModal"> إضافة للمزاد</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 4 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-new-details.html" class="greyBtn"> عرض  </a>
+                                                        <a href="#" type="button" class="greyBtn"  data-toggle="modal" data-target="#auctionModal"> إضافة للمزاد</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 5 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-new-details.html" class="greyBtn"> عرض  </a>
+                                                        <a href="#" type="button" class="greyBtn"  data-toggle="modal" data-target="#auctionModal"> إضافة للمزاد</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 6 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-new-details.html" class="greyBtn"> عرض  </a>
+                                                        <a href="#" type="button" class="greyBtn"  data-toggle="modal" data-target="#auctionModal"> إضافة للمزاد</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 7 </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
+                                                    <td> 60,00 رس</td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
+                                                    <td>
+                                                        <a href="#" type="button" class="greyBtn"  data-toggle="modal" data-target="#auctionModal"> إضافة للمزاد</a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -304,7 +317,7 @@
                         </div>
                         <div class="tabContent" id="tab2">
                             <div class="formBox orderPageDetails">
-                                <h2> الطلبات النشطة </h2>
+                                <h2> المنتجات المضافة للمزاد </h2>
                                 <div class="storeTable">
                                     <div class="storeTableFilter">
                                         <div class="storeFilter"> 
@@ -333,137 +346,8 @@
                                                 </select>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="storeTableBox">                       
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"> </th>
-                                                    <th scope="col">رقم الطلب</th>
-                                                    <th scope="col"> اسم العميل </th>
-                                                    <th scope="col"> السعر </th>
-                                                    <th scope="col"> السعر </th>
-                                                    <th scope="col"> الدفع </th>
-                                                    <th scope="col"> </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td> 1 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
-                                                    <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
-                                                    <td>
-                                                        <a href="store-order-active-details.html" class="greyBtn"> عرض  </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 2 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
-                                                    <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
-                                                    <td>
-                                                        <a href="store-order-active-details.html" class="greyBtn"> عرض  </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 3 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
-                                                    <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
-                                                    <td>
-                                                        <a href="store-order-active-details.html" class="greyBtn"> عرض  </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 4 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
-                                                    <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
-                                                    <td>
-                                                        <a href="store-order-active-details.html" class="greyBtn"> عرض  </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 5 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
-                                                    <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
-                                                    <td>
-                                                        <a href="store-order-active-details.html" class="greyBtn"> عرض  </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 6 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
-                                                    <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
-                                                    <td>
-                                                        <a href="store-order-active-details.html" class="greyBtn"> عرض  </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>  
-                                    <div class="tableFooter"> 
-                                        <div class="dataTables_info"> إظهار النتائج 1 - 10 </div>
-                                        <div class="dataTables_paginate">
-                                            <div class="pagination">
-                                                <a href="#"> <i class="icofont-simple-right"></i> </a>
-                                                <a href="#"> 01 </a>
-                                                <a href="#"> 02 </a>
-                                                <a href="#"> 03 </a>
-                                                <a href="#"> .... </a>
-                                                <a href="#"> 20 </a>
-                                                <a href="#"> <i class="icofont-simple-left"></i> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tabContent" id="tab3">
-                            <div class="formBox orderPageDetails">
-                                <h2> الطلبات منتهية </h2>
-                                <div class="storeTable">
-                                    <div class="storeTableFilter">
                                         <div class="storeFilter"> 
-                                            <label> إظهار </label>
-                                            <div class="customSelect">
-                                                <select class="form-control"> 
-                                                    <option value="0"> 12  </option>
-                                                    <option value="1"> 24 </option>
-                                                    <option value="2"> 36 </option>
-                                                    <option value="3"> 48 </option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="storeFilter storeSearch"> 
-                                            <input type="text" class="form-control">
-                                            <button class="searchBtn"> <i class="icofont-search-1"></i> </button>
-                                        </div>
-                                        <div class="storeFilter"> 
-                                            <label> فلتر حسب </label>
-                                            <div class="customSelect">
-                                                <select class="form-control"> 
-                                                    <option value="0"> الاحــــدث  </option>
-                                                    <option value="1"> الاحــــدث </option>
-                                                    <option value="2"> الاحــــدث </option>
-                                                    <option value="3"> الاحــــدث </option>
-                                                </select>
-                                            </div>
+                                            <a href="#" class="redBtn"> <i class="icofont-plus"></i> <span>  إضافة مزاد </span> </a>
                                         </div>
                                     </div>
                                     <div class="storeTableBox">                       
@@ -471,79 +355,132 @@
                                             <thead>
                                                 <tr>
                                                     <th scope="col"> </th>
-                                                    <th scope="col">رقم الطلب</th>
-                                                    <th scope="col"> اسم العميل </th>
+                                                    <th scope="col">الصورة</th>
+                                                    <th scope="col"> اسم المنتج </th>
                                                     <th scope="col"> السعر </th>
-                                                    <th scope="col"> السعر </th>
-                                                    <th scope="col"> الدفع </th>
+                                                    <th scope="col"> الكمية </th>
+                                                    <th scope="col"> وصف </th>
                                                     <th scope="col"> </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td> 1 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-finished-details.html" class="greyBtn"> عرض  </a>
+                                                        <div class="tableAction">
+                                                            <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
+                                                            <div class="tableList">
+                                                                <a href="store-products-edit.html"> تعديل  </a>
+                                                                <a href="#" class="storeDeleteProduct">  حذف </a>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 2 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-finished-details.html" class="greyBtn"> عرض  </a>
+                                                        <div class="tableAction">
+                                                            <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
+                                                            <div class="tableList">
+                                                                <a href="store-products-edit.html"> تعديل  </a>
+                                                                <a href="#" class="storeDeleteProduct">  حذف </a>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 3 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-finished-details.html" class="greyBtn"> عرض  </a>
+                                                        <div class="tableAction">
+                                                            <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
+                                                            <div class="tableList">
+                                                                <a href="store-products-edit.html"> تعديل  </a>
+                                                                <a href="#" class="storeDeleteProduct">  حذف </a>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 4 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-finished-details.html" class="greyBtn"> عرض  </a>
+                                                        <div class="tableAction">
+                                                            <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
+                                                            <div class="tableList">
+                                                                <a href="store-products-edit.html"> تعديل  </a>
+                                                                <a href="#" class="storeDeleteProduct">  حذف </a>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 5 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-finished-details.html" class="greyBtn"> عرض  </a>
+                                                        <div class="tableAction">
+                                                            <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
+                                                            <div class="tableList">
+                                                                <a href="store-products-edit.html"> تعديل  </a>
+                                                                <a href="#" class="storeDeleteProduct">  حذف </a>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td> 6 </td>
-                                                    <td> #1235 </td>
-                                                    <td> إسم العميل </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
                                                     <td> 60,00 رس</td>
-                                                    <td> 2020 / 2 / 14 </td>
-                                                    <td> عند الاستلام </td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
                                                     <td>
-                                                        <a href="store-order-finished-details.html" class="greyBtn"> عرض  </a>
+                                                        <div class="tableAction">
+                                                            <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
+                                                            <div class="tableList">
+                                                                <a href="store-products-edit.html"> تعديل  </a>
+                                                                <a href="#" class="storeDeleteProduct">  حذف </a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> 7 </td>
+                                                    <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
+                                                    <td> اسم المنتج </td>
+                                                    <td> 60,00 رس</td>
+                                                    <td> 20 </td>
+                                                    <td> هذا النص هو مثال لنص </td>
+                                                    <td>
+                                                        <div class="tableAction">
+                                                            <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
+                                                            <div class="tableList">
+                                                                <a href="store-products-edit.html"> تعديل  </a>
+                                                                <a href="#" class="storeDeleteProduct">  حذف </a>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -657,6 +594,29 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Favourite Modal -->
+    <div class="modal fade" id="auctionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="auctionModal">   
+                    <h2> اضافة للمزاد </h2>
+                    <form action="">
+                        <div class="field">
+                            <label> سعر المزاد </label>
+                            <input type="text" class="form-control" placeholder="برجاء ادخال سعر المزاد">
+                        </div>
+                        <div class="field">
+                            <label> السعر الأدنى للمزاد </label>
+                            <input type="text" class="form-control" placeholder="برجاء ادخال السعر الأدنى للمزاد">
+                        </div>
+                        <button  type="submit" class="redBtn" data-dismiss="modal"> إضافة </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
