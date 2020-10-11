@@ -1469,6 +1469,9 @@ section {
     margin: 0 -5px;
 }
 
+.banners .col-4 ,
+.banners .col-6 ,
+.banners .col-8 ,
 .banners .col-12 {
     padding: 0 8px;
 }
@@ -2086,7 +2089,7 @@ section {
     filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
 }
 
-.required label::after {
+.required > label::after {
     content: '*';
     color: #ED1B24;
     margin: 2px;
@@ -2146,11 +2149,12 @@ section {
         margin-bottom: 10px;
     }
 
-    .field input {
+    .field input , 
+    .field .customSelect select.form-control:not([size]):not([multiple]) {
         height: 40px;
     }
 
-    .field .form-control {
+    .field .form-control  {
         font-size: 13px;
     }
 
@@ -6029,10 +6033,74 @@ section {
 }
 
 /*==========================||---------------------------||========================*/
-/*==========================||             Header        ||========================*/
+/*==========================||         Add Product       ||========================*/
 /*==========================||---------------------------||========================*/
 
-@media screen and (max-width:768px) {}
+.addProductForm .formBody {
+    padding-top: 20px;
+}
+
+.fieldColors {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.addProductForm .redBtn {
+    max-width: 565px;
+    max-width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.addProductForm .checkbox label {
+    font-weight: 500;
+}
+
+.mazadPrices ,
+.offerPrice {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .addProductForm .formBody {
+        padding-top: 0;
+    }
+
+    .addProductForm .checkbox {
+        padding-inline-start: 20px;
+        margin-inline-end: 15px;
+    }
+
+    .addProductForm .checkbox label {
+        line-height: 33px;
+    }
+}
+
+@media (min-width:768px) {
+    .addProductForm .checkbox label::before {
+        width: 23px;
+        height: 23px;
+        border-radius: 4px;
+        top: 6px;
+    }
+    
+    .addProductForm .checkbox {
+        padding-inline-start: 35px;
+        margin-inline-end: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    
+    .addProductForm .checkbox input:checked+label::after {
+        width: 7px;
+        height: 14px;
+        top: 8px;
+        right: 8px;
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||             Header        ||========================*/

@@ -162,192 +162,139 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-8 col-lg-9">
-                    <div class="formBox orderPageDetails">
-                        <h2> المنتجات </h2>
-                        <div class="storeTable">
-                            <div class="storeTableFilter">
-                                <div class="storeFilter"> 
-                                    <label> إظهار </label>
+                    <form action="store-products.html">
+                        <div class="formBox orderPageDetails addProductForm">
+                            <h2> إضافة منتج </h2>
+                            <div class="formBody">
+                                <div class="field required">
+                                    <label> إسم المنتج </label>
+                                    <input type="text" class="form-control" placeholder="برجاء ادخال إسم المنتج">
+                                </div>
+                                <div class="field required">
+                                    <label> القسم الفرعى </label>
                                     <div class="customSelect">
                                         <select class="form-control"> 
-                                            <option value="0"> 12  </option>
-                                            <option value="1"> 24 </option>
-                                            <option value="2"> 36 </option>
-                                            <option value="3"> 48 </option>
+                                            <option value=""> برجاء ادخال القسم الفرعى </option>
+                                            <option value="0"> القسم </option>
+                                            <option value="1"> القسم </option>
+                                            <option value="2"> القسم </option>
+                                            <option value="3"> القسم </option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="storeFilter storeSearch"> 
-                                    <input type="text" class="form-control">
-                                    <button class="searchBtn"> <i class="icofont-search-1"></i> </button>
-                                </div>
-                                <div class="storeFilter"> 
-                                    <label> فلتر حسب </label>
+                                <div class="field required">
+                                    <label> سنة الصنع </label>
                                     <div class="customSelect">
                                         <select class="form-control"> 
-                                            <option value="0"> الاحــــدث  </option>
-                                            <option value="1"> الاحــــدث </option>
-                                            <option value="2"> الاحــــدث </option>
-                                            <option value="3"> الاحــــدث </option>
+                                            <option value=""> برجاء ادخال سنة الصنع </option>
+                                            <option value="0"> 2020 </option>
+                                            <option value="1"> 2019 </option>
+                                            <option value="2"> 2018 </option>
+                                            <option value="3"> 2017 </option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="storeFilter"> 
-                                    <a href="add-product.html" class="redBtn"> <i class="icofont-plus"></i> <span>  إضافة منتج </span> </a>
-                                </div>
-                            </div>
-                            <div class="storeTableBox">                       
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col"> </th>
-                                            <th scope="col">الصورة</th>
-                                            <th scope="col"> اسم المنتج </th>
-                                            <th scope="col"> السعر </th>
-                                            <th scope="col"> الكمية </th>
-                                            <th scope="col"> وصف </th>
-                                            <th scope="col"> </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> 1 </td>
-                                            <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
-                                            <td> اسم المنتج </td>
-                                            <td> 60,00 رس</td>
-                                            <td> 20 </td>
-                                            <td> هذا النص هو مثال لنص </td>
-                                            <td>
-                                                <div class="tableAction">
-                                                    <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
-                                                    <div class="tableList">
-                                                        <a href="store-products-edit.html"> تعديل  </a>
-                                                        <a href="#" class="storeDeleteProduct">  حذف </a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 2 </td>
-                                            <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
-                                            <td> اسم المنتج </td>
-                                            <td> 60,00 رس</td>
-                                            <td> 20 </td>
-                                            <td> هذا النص هو مثال لنص </td>
-                                            <td>
-                                                <div class="tableAction">
-                                                    <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
-                                                    <div class="tableList">
-                                                        <a href="store-products-edit.html"> تعديل  </a>
-                                                        <a href="#" class="storeDeleteProduct">  حذف </a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 3 </td>
-                                            <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
-                                            <td> اسم المنتج </td>
-                                            <td> 60,00 رس</td>
-                                            <td> 20 </td>
-                                            <td> هذا النص هو مثال لنص </td>
-                                            <td>
-                                                <div class="tableAction">
-                                                    <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
-                                                    <div class="tableList">
-                                                        <a href="store-products-edit.html"> تعديل  </a>
-                                                        <a href="#" class="storeDeleteProduct">  حذف </a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 4 </td>
-                                            <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
-                                            <td> اسم المنتج </td>
-                                            <td> 60,00 رس</td>
-                                            <td> 20 </td>
-                                            <td> هذا النص هو مثال لنص </td>
-                                            <td>
-                                                <div class="tableAction">
-                                                    <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
-                                                    <div class="tableList">
-                                                        <a href="store-products-edit.html"> تعديل  </a>
-                                                        <a href="#" class="storeDeleteProduct">  حذف </a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 5 </td>
-                                            <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
-                                            <td> اسم المنتج </td>
-                                            <td> 60,00 رس</td>
-                                            <td> 20 </td>
-                                            <td> هذا النص هو مثال لنص </td>
-                                            <td>
-                                                <div class="tableAction">
-                                                    <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
-                                                    <div class="tableList">
-                                                        <a href="store-products-edit.html"> تعديل  </a>
-                                                        <a href="#" class="storeDeleteProduct">  حذف </a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 6 </td>
-                                            <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
-                                            <td> اسم المنتج </td>
-                                            <td> 60,00 رس</td>
-                                            <td> 20 </td>
-                                            <td> هذا النص هو مثال لنص </td>
-                                            <td>
-                                                <div class="tableAction">
-                                                    <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
-                                                    <div class="tableList">
-                                                        <a href="store-products-edit.html"> تعديل  </a>
-                                                        <a href="#" class="storeDeleteProduct">  حذف </a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 7 </td>
-                                            <td> <img src="images/img-5.png" alt="img" class="img-fluid"> </td>
-                                            <td> اسم المنتج </td>
-                                            <td> 60,00 رس</td>
-                                            <td> 20 </td>
-                                            <td> هذا النص هو مثال لنص </td>
-                                            <td>
-                                                <div class="tableAction">
-                                                    <div class="tableToggle"> <span></span> <span></span> <span></span> </div>
-                                                    <div class="tableList">
-                                                        <a href="store-products-edit.html"> تعديل  </a>
-                                                        <a href="#" class="storeDeleteProduct">  حذف </a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>  
-                            <div class="tableFooter"> 
-                                <div class="dataTables_info"> إظهار النتائج 1 - 10 </div>
-                                <div class="dataTables_paginate">
-                                    <div class="pagination">
-                                        <a href="#"> <i class="icofont-simple-right"></i> </a>
-                                        <a href="#"> 01 </a>
-                                        <a href="#"> 02 </a>
-                                        <a href="#"> 03 </a>
-                                        <a href="#"> .... </a>
-                                        <a href="#"> 20 </a>
-                                        <a href="#"> <i class="icofont-simple-left"></i> </a>
+                                <div class="fieldFlexBox">
+                                    <div class="field required">
+                                        <label> سعر المنتج </label>
+                                        <input type="text" class="form-control" placeholder="برجاء ادخال سعر المنتج">
+                                    </div>
+                                    <div class="field required">
+                                        <label> الكمية المتاحة </label>
+                                        <div class="customSelect">
+                                            <select class="form-control"> 
+                                                <option value="0">  الكمية </option>
+                                                <option value="1"> 2019 </option>
+                                                <option value="2"> 2018 </option>
+                                                <option value="3"> 2017 </option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="field required">
+                                    <label> اللون </label>
+                                    <div class="fieldColors">
+                                        <div class="checkbox"> 
+                                            <input type="checkBox">
+                                            <label> احمر </label>
+                                        </div>
+                                        <div class="checkbox"> 
+                                            <input type="checkBox">
+                                            <label> اخضر </label>
+                                        </div>
+                                        <div class="checkbox"> 
+                                            <input type="checkBox">
+                                            <label> احمر </label>
+                                        </div>
+                                        <div class="checkbox"> 
+                                            <input type="checkBox">
+                                            <label> اخضر </label>
+                                        </div>
+                                        <div class="checkbox"> 
+                                            <input type="checkBox">
+                                            <label> احمر </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field required">
+                                    <label> وصف المنتج </label>
+                                    <textarea type="text" class="form-control"></textarea>
+                                </div>
+                                <div class="checkbox mazadCheckField"> 
+                                    <input type="checkBox" id="mazadCheck">
+                                    <label> اضافة المنتج للمزاد </label>
+                                </div>
+                                <div class="mazadPrices">
+                                    <div class="field"> 
+                                        <label> سعر المزاد </label>
+                                        <input type="text" class="form-control" placeholder="برجاء ادخال سعر المزاد">
+                                    </div>
+                                    <div class="field"> 
+                                        <label> السعر الادنى للمزاد </label>
+                                        <input type="text" class="form-control" placeholder="برجاء ادخال السعر الادنى للمزاد">
+                                    </div>
+                                </div>
+                                <div class="checkbox offerCheckField"> 
+                                    <input type="checkBox" id="offerCheck">
+                                    <label> اضافة المنتج للعروض </label>
+                                </div>
+                                <div class="field offerPrice" id="offerPrice"> 
+                                    <label> سعر المنتج قبل الخصم </label>
+                                    <input type="text" class="form-control" placeholder="برجاء ادخال سعر المنتج">
+                                </div>
+                                <div class="otherImages">
+                                    <h4> صور المنتج </h4>
+                                    <div class="otherImagesBox">
+                                        <div class="uploadImageBox">
+                                            <div class="uploadImage">
+                                                <input type="file"  accept="image/*">
+                                                <img src="images/uploadImage.png" alt="icon" class="img-fluid">
+                                            </div>
+                                            <div class="preview"></div>
+                                        </div>
+                                        <div class="uploadImageBox">
+                                            <div class="uploadImage">
+                                                <input type="file"  accept="image/*">
+                                                <img src="images/uploadImage.png" alt="icon" class="img-fluid">
+                                            </div>
+                                            <div class="preview"></div>
+                                        </div>
+                                        <div class="uploadImageBox">
+                                            <div class="uploadImage">
+                                                <input type="file"  accept="image/*">
+                                                <img src="images/uploadImage.png" alt="icon" class="img-fluid">
+                                            </div>
+                                            <div class="preview"></div>
+                                        </div>
+                                        <div class="uploadMore">
+                                            <span> <i class="icofont-plus"></i> </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="redBtn" data-toggle="modal" data-target="#success"> إضافة  </button> 
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

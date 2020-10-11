@@ -393,8 +393,28 @@
         e.preventDefault();
         $(this).parents('tr').remove();
     });
-    
-    
+
+    // Add Product to Offer
+    $('#offerCheck').on('change' , function() {
+        if($(this).is(':checked')) {
+            $('#offerPrice').show();
+            $('.mazadCheckField').hide();
+        } else {
+            $('#offerPrice').hide();
+            $('.mazadCheckField').show();
+        }
+    });
+
+    // Add Item To bid
+    $('#mazadCheck').on('change' , function() {
+        if($(this).is(':checked')) {
+            $('.offerCheckField').hide();
+            $('.mazadPrices').show();
+        } else {
+            $('.offerCheckField').show();
+            $('.mazadPrices').hide();
+        }
+    });
 
 
     // Range Slider 
@@ -416,26 +436,6 @@
     $('.rangeValues .min').text($('#rangeSlider').slider("option", "min") + " SR");
     $('.rangeValues .max').text($('#rangeSlider').slider("option", "max") + " SR");
 
-
-    
-
-
-    // Upload Avatar 
-    // function uploadAvatar(input , place) {
-    //     if (input.files && input.files[0]) {
-    //         let reader = new FileReader();
-    //         reader.onload = function(e) {
-    //             let preview = place;
-    //             let newSrc = e.target.result;
-    //             $(preview).find('img').attr('src' , newSrc );
-    //         }
-    //         reader.readAsDataURL(input.files[0]);
-    //     }
-    // }
-    // $('.uploadAvatar input').change(function() {
-    //     uploadAvatar(this , $(this).parent().prev('.profileAvatarPreview'));
-    // });
-  
 
     // iniat WOW Js
     // new WOW().init();
