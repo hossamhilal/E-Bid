@@ -164,17 +164,17 @@
                 <div class="col-12 col-sm-8 col-lg-9">
                     <form action="store-products.html">
                         <div class="formBox orderPageDetails addProductForm">
-                            <h2> إضافة منتج </h2>
+                            <h2> تعديل منتج </h2>
                             <div class="formBody">
                                 <div class="field required">
                                     <label> إسم المنتج </label>
-                                    <input type="text" class="form-control" placeholder="برجاء ادخال إسم المنتج">
+                                    <input type="text" class="form-control" value="سيارة كمارى ">
                                 </div>
                                 <div class="field required">
                                     <label> القسم الفرعى </label>
                                     <div class="customSelect">
                                         <select class="form-control"> 
-                                            <option value=""> برجاء ادخال القسم الفرعى </option>
+                                            <option value=""> السيارات</option>
                                             <option value="0"> القسم </option>
                                             <option value="1"> القسم </option>
                                             <option value="2"> القسم </option>
@@ -186,7 +186,6 @@
                                     <label> سنة الصنع </label>
                                     <div class="customSelect">
                                         <select class="form-control"> 
-                                            <option value=""> برجاء ادخال سنة الصنع </option>
                                             <option value="0"> 2020 </option>
                                             <option value="1"> 2019 </option>
                                             <option value="2"> 2018 </option>
@@ -197,13 +196,12 @@
                                 <div class="fieldFlexBox">
                                     <div class="field required">
                                         <label> سعر المنتج </label>
-                                        <input type="text" class="form-control" placeholder="برجاء ادخال سعر المنتج">
+                                        <input type="text" class="form-control" value="25000">
                                     </div>
                                     <div class="field required">
                                         <label> الكمية المتاحة </label>
                                         <div class="customSelect">
                                             <select class="form-control"> 
-                                                <option value="0">  الكمية </option>
                                                 <option value="1"> 1 </option>
                                                 <option value="2"> 2 </option>
                                                 <option value="3"> 3 </option>
@@ -215,7 +213,7 @@
                                     <label> اللون </label>
                                     <div class="fieldColors">
                                         <div class="checkbox"> 
-                                            <input type="checkBox">
+                                            <input type="checkBox" checked>
                                             <label> احمر </label>
                                         </div>
                                         <div class="checkbox"> 
@@ -223,7 +221,7 @@
                                             <label> اخضر </label>
                                         </div>
                                         <div class="checkbox"> 
-                                            <input type="checkBox">
+                                            <input type="checkBox" checked>
                                             <label> احمر </label>
                                         </div>
                                         <div class="checkbox"> 
@@ -238,7 +236,7 @@
                                 </div>
                                 <div class="field required">
                                     <label> وصف المنتج </label>
-                                    <textarea type="text" class="form-control"></textarea>
+                                    <textarea type="text" class="form-control"> منتج جديد</textarea>
                                 </div>
                                 <div class="checkbox mazadCheckField"> 
                                     <input type="checkBox" id="mazadCheck">
@@ -266,18 +264,24 @@
                                     <h4> صور المنتج </h4>
                                     <div class="otherImagesBox">
                                         <div class="uploadImageBox">
-                                            <div class="uploadImage">
+                                            <div class="uploadImage hideUpload">
                                                 <input type="file"  accept="image/*">
                                                 <img src="images/uploadImage.png" alt="icon" class="img-fluid">
                                             </div>
-                                            <div class="preview"></div>
+                                            <div class="preview"> 
+                                                <img src="images/img-6.png" alt="img" class="img-fluid">
+                                                <span class="deleteImage"><i class="icofont-close-line"></i></span> 
+                                            </div>
                                         </div>
                                         <div class="uploadImageBox">
-                                            <div class="uploadImage">
+                                            <div class="uploadImage hideUpload">
                                                 <input type="file"  accept="image/*">
                                                 <img src="images/uploadImage.png" alt="icon" class="img-fluid">
                                             </div>
-                                            <div class="preview"></div>
+                                            <div class="preview"> 
+                                                <img src="images/img-6.png" alt="img" class="img-fluid">
+                                                <span class="deleteImage"><i class="icofont-close-line"></i></span> 
+                                            </div>
                                         </div>
                                         <div class="uploadImageBox">
                                             <div class="uploadImage">
